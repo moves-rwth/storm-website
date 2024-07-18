@@ -91,7 +91,7 @@ We provide an outdated VM with pre-installed Storm 0.10 for historical reasons. 
 The root password is *storm*.
 
 {:.alert .alert-info}
-The virtual machine is hosted at [sciebo](https://www.sciebo.de/en/){:target="_blank" .alert-link}, an academic cloud hoster.
+The virtual machine is hosted at [sciebo](https://hochschulcloud.nrw/en){:target="_blank" .alert-link}, an academic cloud hoster.
 
 A `README` file is provided on the desktop. In the virtual machine, Storm is located at `/home/storm/storm` and the binaries can be found in `/home/storm/storm/build/bin`. For your convenience, an environment variable with the name `STORM_DIR` is set to the path containing the binaries and this directory is added to the `PATH`, meaning that you can run the Storm binaries from any location in the terminal and that
 ```console

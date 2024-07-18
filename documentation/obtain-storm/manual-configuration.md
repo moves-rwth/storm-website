@@ -11,7 +11,7 @@ layout: default
 Designed for users that need particular features and people developing under Storm, this guide will detail how to perform a manual configuration of the build process.
 
 There are a number of **cmake options** that modify how Storm is built.
-All of them can be set in the [configuration step](compile.html#configuration-step) by providing them to `cmake`.
+All of them can be set in the [configuration step](build.html#configuration-step) by providing them to `cmake`.
 To modify the options after the configuration step, you may run `ccmake ..` (assuming that you currently are in `STORM_DIR/build`). After changing these options you need to rebuild Storm using `make`.
 
 We don't detail all options here, but only selected ones.

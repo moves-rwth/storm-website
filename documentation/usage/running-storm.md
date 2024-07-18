@@ -29,7 +29,7 @@ Storm takes [many languages]({{ '/documentation/background/languages.html' | rel
         <td><a href="{{ '/documentation/background/languages.html#prism' | relative_url }}">PRISM</a>, <a href="{{ '/documentation/background/languages.html#jani' | relative_url }}">JANI</a>, <a href="{{ '/documentation/background/languages.html#explicit' | relative_url }}">explicit</a></td>
         <td>storm-pars</td>
         <td>storm-pars-cli</td>
-        <td><a href="running-storm-on-parametric-models">Running Storm on parametric models</a></td>
+        <td><a href="{{ '/documentation/usage/running-storm-on-parametric-models.html' | relative_url }}">Running Storm on parametric models</a></td>
     </tr>
     <tr>
         <td><a href="{{ '/documentation/background/languages.html#dfts' | relative_url }}">DFTs</a>
@@ -243,7 +243,7 @@ $ storm --qvbsroot QCOMP_DIR/benchmarks --qvbs jobs
 ```
 {% include includes/show_output.html class="qvbs_jobs" path="qvbs/jobs.out" %}
 
-Here, we assume that the [QComp git repository](https://github.com/ahartmanns/qcomp){:target="_blank"} has been cloned into the directory `QCOMP_DIR`. If you built Storm from [source]({{ '/documentation/obtaion-storm/build.html' | relative_url }}), you can also set the [cmake option]({{ '/documentation/obtain-storm/manual-configuration' | relative_url }}) `-DSTORM_LOAD_QVBS=ON` which will automatically download the complete benchmark set during the build step, allowing you to omit the `--qvbsroot QCOMP_DIR/benchmarks` command line option.
+Here, we assume that the [QComp git repository](https://github.com/ahartmanns/qcomp){:target="_blank"} has been cloned into the directory `QCOMP_DIR`. If you built Storm from [source]({{ '/documentation/obtain-storm/build.html' | relative_url }}), you can also set the [cmake option]({{ '/documentation/obtain-storm/manual-configuration.html' | relative_url }}) `-DSTORM_LOAD_QVBS=ON` which will automatically download the complete benchmark set during the build step, allowing you to omit the `--qvbsroot QCOMP_DIR/benchmarks` command line option.
 
 The above command checks all available properties for the first instance of the model [jobs](https://qcomp.org/benchmarks/index.html#jobs){:target="_blank"}.
 The model checking call is equivalent to invoking Storm on the respective JANI file.

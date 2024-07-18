@@ -84,9 +84,9 @@ Storm
 - has roughly ~220k lines of C++ code (as of April 2023)
 - is under development since 2012
 - went open source in 2017
-- has over 15 [contributors](https://github.com/moves-rwth/storm/#Authors)
+- has over 15 [contributors](https://github.com/moves-rwth/storm/graphs/contributors)
 - supported on most Unix platforms
-- would have been impossible without all the [cool libraries around](documentation/dependencies)
+- would have been impossible without all the [cool libraries around]({{ '/documentation/dependencies.html' | relative_url }})
 
 ## People
 

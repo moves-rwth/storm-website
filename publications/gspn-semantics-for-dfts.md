@@ -12,7 +12,7 @@ On this page, you can find supplementary material for the GSPN semantics for DFT
 
 The translation from DFTs to GSPN is implemented in Storm in version [1.2.1](https://github.com/moves-rwth/storm/releases/tag/1.2.1).
 
-The obtained GSPNs can be exported into the project format used by the [GreatSPN Editor](http://www.di.unito.it/~amparore/mc4cslta/editor.html).
+The obtained GSPNs can be exported into the project format used by the [GreatSPN Editor](https://github.com/greatspn/SOURCES).
 
 The translation into a GSPN can be enabled in Storm with the commandline flag `--gspn` and then the export into the GreatSPN Editor format can be triggered with `--to-pnpro`.
 An example call would be as follows:

@@ -112,7 +112,7 @@ To illustrate how the formulae can be used, we give some examples of syntactical
 ## Multi-objective Model Checking
 
 Storm supports multi-objective model checking: In nondeterministic models, different objectives might require different choices of actions in order to satisfy the property.
-This induces trade-offs between different strategies. Multi-objective model checking reveals such trade-offs by computing the Pareto curve, as explained in our [example]({{ '/documentation/usage/running-storm.html#multi-objective-model-checking-of-a-markov-automaton' | relative_url }}).
+This induces trade-offs between different strategies. Multi-objective model checking reveals such trade-offs by computing the Pareto curve, as explained in our [example]({{ '/documentation/usage/running-storm.html#multi-objective-model-checking-of-mdps-and-markov-automata' | relative_url }}).
 
 The simplest way of asking about these trade-offs are achievability queries: They ask whether there exists a strategy which fulfils all thresholds.
 

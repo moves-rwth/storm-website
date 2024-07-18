@@ -32,7 +32,7 @@ The [Petri Net Markup Language](https://www.pnml.org/){:target="_blank"} is an I
 
 ### GreatSPN editor projects
 
-The [GreatSPN editor](http://www.di.unito.it/~amparore/mc4cslta/editor.html){:target="_blank"} is a GUI capable of specifying and verifying GSPNs. Project files (XML) specifying a single GSPN can be parsed directly by Storm.
+The [GreatSPN editor](https://github.com/greatspn/SOURCES){:target="_blank"} is a GUI capable of specifying and verifying GSPNs. Project files (XML) specifying a single GSPN can be parsed directly by Storm.
 
 ## DFTs
 
