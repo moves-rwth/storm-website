@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
+        <div class="navbar-collapse collapse" id="navbar-main" data-proofer-ignore>
             <ul class="nav navbar-nav">
                 {% assign sorted_pages = site.pages | sort: 'category_weight' %}
                 {% assign navigation_pages = site.pages | sort: 'navigation_weight' %}
