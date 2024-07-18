@@ -79,7 +79,7 @@ These input languages can be treated by Storm's main executable `storm`. Storm s
 
 #### Example 1 (Analysis of a PRISM model of the Knuth-Yao die)
 
-In our first example, we are going to analyze a small [DTMC]({{ '/documentation/background/models.html#discrete-time-markov-chains-dtmcs' | relative_url }}) in the PRISM format. More specifically, the model represents a protocol to simulate a six-sided die with the use of a fair coin only. The model and more information can be found at the [PRISM website](http://www.prismmodelchecker.org/casestudies/dice.php){:target="_blank"}, but for your convenience, you can view the model and the download link below.
+In our first example, we are going to analyze a small [DTMC]({{ '/documentation/background/models.html#discrete-time-markov-chains-dtmcs' | relative_url }}) in the PRISM format. More specifically, the model represents a protocol to simulate a six-sided die with the use of a fair coin only. The model and more information can be found at the [PRISM website](https://www.prismmodelchecker.org/casestudies/dice.php){:target="_blank"}, but for your convenience, you can view the model and the download link below.
 
 {% include includes/show_model.html name="PRISM model of Knuth-Yao die" class="prism_die_dtmc" path="prism/die.pm" %}
 
@@ -137,7 +137,7 @@ More information on how to define properties can be found [here]({{ '/documentat
 
 #### Example 2 (Analysis of a PRISM model of an asynchronous leader election protocol)
 
-In this example, we consider another model available from the [PRISM website](http://www.prismmodelchecker.org/casestudies/asynchronous_leader.php){:target="_blank"}: the asynchronous leader election protocol.
+In this example, we consider another model available from the [PRISM website](https://www.prismmodelchecker.org/casestudies/asynchronous_leader.php){:target="_blank"}: the asynchronous leader election protocol.
 
 {% include includes/show_model.html name="PRISM model of asynchronous leader election protocol" class="prism_async_leader_mdp" path="prism/leader4.nm" %}
 
@@ -236,7 +236,7 @@ Plugging this value in our formula yields $$\pi \approx 4 \frac{hits}{100} = 4 \
 
 ### Running Storm on Benchmarks from the Quantitative Verification Benchmark Set
 
-To run Storm on a benchmark from the [Quantitative Verification Benchmark Set (QVBS)](http://qcomp.org/benchmarks){:target="_blank"} (say, for example, the model [jobs](http://qcomp.org/benchmarks/index.html#jobs){:target="_blank"}, type:
+To run Storm on a benchmark from the [Quantitative Verification Benchmark Set (QVBS)](https://qcomp.org/benchmarks){:target="_blank"} (say, for example, the model [jobs](https://qcomp.org/benchmarks/index.html#jobs){:target="_blank"}, type:
 
 ```console
 $ storm --qvbsroot QCOMP_DIR/benchmarks --qvbs jobs
@@ -245,7 +245,7 @@ $ storm --qvbsroot QCOMP_DIR/benchmarks --qvbs jobs
 
 Here, we assume that the [QComp git repository](https://github.com/ahartmanns/qcomp){:target="_blank"} has been cloned into the directory `QCOMP_DIR`. If you built Storm from [source]({{ '/documentation/obtaion-storm/build.html' | relative_url }}), you can also set the [cmake option]({{ '/documentation/obtain-storm/manual-configuration' | relative_url }}) `-DSTORM_LOAD_QVBS=ON` which will automatically download the complete benchmark set during the build step, allowing you to omit the `--qvbsroot QCOMP_DIR/benchmarks` command line option.
 
-The above command checks all available properties for the first instance of the model [jobs](http://qcomp/org/benchmarks/index.html#jobs){:target="_blank"}.
+The above command checks all available properties for the first instance of the model [jobs](https://qcomp.org/benchmarks/index.html#jobs){:target="_blank"}.
 The model checking call is equivalent to invoking Storm on the respective JANI file.
 The output also indicates the other available instances and the available properties. You can append an instance index and a comma seperated list of property names to the command above:
 

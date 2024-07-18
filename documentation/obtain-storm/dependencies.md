@@ -34,7 +34,7 @@ Required:
 Recommended:
 - [Z3](https://github.com/Z3Prover/z3){:target="_blank"} (not strictly required, but already needed for standard tasks like PRISM/JANI model building)
 - [xerces-c](https://xerces.apache.org/xerces-c/){:target="_blank"} (needed for the parsing and export of XML files, in particular for GSPNs)
-- [MathSAT](http://mathsat.fbk.eu/){:target="_blank"} (needed by the abstraction refinement engine, needs to be configured manually during the [configuration](manual-configuration.html#mathsat))
+- [MathSAT](https://mathsat.fbk.eu/){:target="_blank"} (needed by the abstraction refinement engine, needs to be configured manually during the [configuration](manual-configuration.html#mathsat))
 
 
 ## OS specific preparations
