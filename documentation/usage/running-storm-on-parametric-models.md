@@ -38,7 +38,7 @@ While we work towards a unified interface, these support different options.
 
 ### Feasibility with pla
 
-The pla engine is based on work in {% cite JAHJKQV19 %}. The feasibility computation is partially based on work in {% cite SJK21 %}.
+The pla engine is based on work in {% cite JAHJKQV24 %}. The feasibility computation is partially based on work in {% cite SJK21 %}.
 
 ```console
 $ storm-pars  --mode feasibility --feasibility:method pla --prism brp.pm  --prop 'P<=0.01 [F s=5]' --region "0.1 <= pL <= 0.9, 0.1 <= pK <= 0.9"
@@ -100,7 +100,7 @@ Result at initial state: 0.001706273496 ( approx. 0.001706273496) at [pK=6267953
  which gives values for pK and pL such that `P<=0.01 [F s=5]`  is satisfied.
 
 ## Verification
-To prove the absence of a solution, we can use parameter lifting. A comprehensive overview on the theoretical backgrounds is given in {% cite JAHJKQV19 %}.
+To prove the absence of a solution, we can use parameter lifting. A comprehensive overview on the theoretical backgrounds is given in {% cite JAHJKQV24 %}.
 
 ```console
 $ storm-pars  --mode verification --prism brp.pm  --prop 'P<=0.9999 [F s=5]' --region "0.1 <= pL <= 0.9, 0.1 <= pK <= 0.9"
@@ -138,7 +138,7 @@ We can see that for two parameters, Storm even visulalizes the acquired data to 
 
 ## Computing the exact solution function
 
-We can run Storm to obtain closed-form solutions, i.e. a rational function that represents, e.g., the probability with which the given property is satisfied for certain parameter valuations.  A comprehensive overview on the theoretical backgrounds is given in {% cite JAHJKQV19 %}.
+We can run Storm to obtain closed-form solutions, i.e. a rational function that represents, e.g., the probability with which the given property is satisfied for certain parameter valuations.  A comprehensive overview on the theoretical backgrounds is given in {% cite JAHJKQV24 %}.
 
 ```console
 $ storm-pars --mode solutionfunction  --prism brp.pm  --prop 'P=? [F s=5]'  
