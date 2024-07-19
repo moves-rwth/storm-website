@@ -85,7 +85,7 @@ Check the output carefully for errors and warnings. If all dependencies are prop
 
 ## Build Step
 
-If the configuration step went smoothly, the compilation step should run through. Feel free to use the compilation time for a coffee or stroll through the park.
+If the configuration step went smoothly, the compilation step should run through.
 
 To compile all of Storm's binaries including all tests, enter
 
@@ -104,7 +104,7 @@ If you just want to compile Storm's main command-line interface, typing `make st
 
 {:.alert .alert-info}
 If you have multiple cores at your disposal and at least 8GB of memory, you can execute
-`make storm-cli -j${NUMBER_OF_CORES}` to speed up compilation. You will still be able to get the coffee, no worries.
+`make storm-cli -j${NUMBER_OF_CORES}` to speed up compilation.
 
 ## Adding Storm to your Path <span class="label label-info">optional</span>
 
