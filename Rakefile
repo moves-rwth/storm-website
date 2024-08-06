@@ -16,3 +16,10 @@ task :test do
     ],
   }).run
 end
+
+task :test_paper_links do
+  sh "bundle exec jekyll build"
+  HTMLProofer.check_file('paper_links.html', {
+    enforce_https: false,
+  }).run
+end

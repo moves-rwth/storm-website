@@ -27,3 +27,8 @@ To test whether all links in the website are valid run the following:
 ```console
 bundle exec rake test
 ```
+
+To test whether all links provided in published papers remain valid run the following:
+```console
+bundle exec rake test_paper_links
+```
