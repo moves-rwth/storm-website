@@ -22,7 +22,7 @@ Storm takes [many languages]({{ '/documentation/background/languages.html' | rel
     <tr>
         <td><a href="{{ '/documentation/background/languages.html#prism' | relative_url }}">PRISM</a>, <a href="{{ '/documentation/background/languages.html#jani' | relative_url }}">JANI</a>, <a href="{{ '/documentation/background/languages.html#explicit' | relative_url }}">explicit</a></td>
         <td>storm</td>
-        <td>storm-main</td>
+        <td>storm-cli</td>
         <td><a href="running-storm.html#running-storm-on-prism-jani-or-explicit-input">Running Storm on PRISM, JANI or explicit input</a></td>
     </tr>
     <tr>
