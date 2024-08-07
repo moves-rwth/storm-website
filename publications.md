@@ -34,7 +34,7 @@ The publications in this category present functionality from which a substantial
 - [QMaude](https://maude.ucm.es/qmaude/): Quantitative specification and verification in Maude
 - [SAFEST](https://www.safest.dgbtek.com/): Dynamic fault-tree analysis tool
 - [STAMINA](https://staminachecker.org/): State-space truncation tool that can analyze infinite-sized models
-- [TEMPEST](https://tempest-synthesis.org/): Synthesis tool for reactive systems and shields in probabilistic environments
+- [TEMPEST](https://tempest-synthesis.org): Synthesis tool for reactive systems and shields in probabilistic environments
 
 ## Papers using Storm as a backend
 

@@ -84,9 +84,9 @@ Storm
 - has roughly ~220k lines of C++ code (as of April 2023)
 - is under development since 2012
 - went open source in 2017
-- has over 15 [contributors](https://github.com/moves-rwth/storm/#Authors)
+- has over 15 [contributors](https://github.com/moves-rwth/storm/graphs/contributors)
 - supported on most Unix platforms
-- would have been impossible without all the [cool libraries around](documentation/dependencies)
+- would have been impossible without all the [cool libraries around]({{ '/documentation/dependencies.html' | relative_url }})
 
 ## People
 
@@ -97,7 +97,7 @@ If you have general feedback or questions on how to use Storm, please send us a 
 
 For feature request or bug reports, please open a [new issue on GitHub](https://github.com/moves-rwth/storm/issues/new){:target="_blank"}.
 
-Storm has initially been developed at the [Chair for Software Modeling and Verification](http://moves.rwth-aachen.de){:target="_blank"} at RWTH Aachen University.
+Storm has initially been developed at the [Chair for Software Modeling and Verification](https://moves.rwth-aachen.de){:target="_blank"} at RWTH Aachen University.
 The core developers are
 
 - [Christian Hensel](https://moves.rwth-aachen.de/people/hensel/){:target="_blank"} RWTH Aachen University (until 2018)
@@ -116,7 +116,7 @@ This website is developed with
 [Font awesome](https://fontawesome.com){:target="_blank"},
 [Font mfizz](http://fizzed.com/oss/font-mfizz){:target="_blank"},
 [Jekyll](https://jekyllrb.com){:target="_blank"},
-[Sphinx Doc](http://www.sphinx-doc.org/en/stable/){:target="_blank"}.
+[Sphinx Doc](https://www.sphinx-doc.org/en/stable/){:target="_blank"}.
 
 Responsible for this website is
 

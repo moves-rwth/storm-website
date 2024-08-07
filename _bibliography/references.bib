@@ -15,6 +15,8 @@ For cite keys please use the existing scheme:
  - Append a,b,c, ... in case this yields duplicates
 Drop non-ASCII characters like accents
 
+The bibtex entries are based on the DBLP bibtex export using the condensed format.
+
 If the publication shall appear on the "Publications"-webpage, specify a category-field with a value in [tool, competition, feature, using]
 
 Other (non-standard) fields are
@@ -26,11 +28,12 @@ Other (non-standard) fields are
 
 More custom fields can be added by editing the corresponding bib layout (_layouts/bib.html)
 
+
 % 2024
 %%%%%%
 
 @article{ABBCGHHIJJJKKKMPPQRTVWZ24,
-category={competition},
+  category     = {competition},
   author       = {Roman Andriushchenko and
                   Alexander Bork and
                   Carlos E. Budde and
@@ -59,7 +62,7 @@ category={competition},
   volume       = {abs/2405.13583},
   doi          = {10.48550/ARXIV.2405.13583},
   year         = {2024},
-website = {https://qcomp.org}
+  website      = {https://qcomp.org}
 }
 
 
@@ -79,8 +82,8 @@ website = {https://qcomp.org}
   pages        = {299--319},
   publisher    = {Springer},
   year         = {2024},
-  material = {https://doi.org/10.5281/zenodo.10433183},
-  doi          = {10.1007/978-3-031-57249-4\_15},
+  doi          = {10.1007/978-3-031-57249-4_15},
+  material     = {https://doi.org/10.5281/zenodo.10433183},
 }
 
 @inproceedings{BVJSJ24,
@@ -97,12 +100,13 @@ website = {https://qcomp.org}
   pages        = {258--278},
   publisher    = {Springer},
   year         = {2024},
+  doi          = {10.1007/978-3-031-57249-4_13},
   arxiv-id     = {2401.06574},
-  material     = {https://doi.org/10.5281/zenodo.10438984}
+  material     = {https://doi.org/10.5281/zenodo.10438984},
 }
 
 @article{JAHJKQV24,
-  category = {feature},
+  category     = {feature},
   author       = {Sebastian Junges and
                   Erika {\'{A}}brah{\'{a}}m and
                   Christian Hensel and
@@ -117,12 +121,12 @@ website = {https://qcomp.org}
   pages        = {181--259},
   doi          = {10.1007/S10703-023-00442-X},
   year         = {2024},
-  arxiv-id  = {1903.07993},
-  website   = {https://moves-rwth.github.io/prophesy/}
+  arxiv-id     = {1903.07993},
+  website      = {https://moves-rwth.github.io/prophesy/},
 }
 
 @inproceedings{MKQW24,
-  category    = {feature},
+  category     = {feature},
   author       = {Hannah Mertens and
                   Joost{-}Pieter Katoen and
                   Tim Quatmann and
@@ -134,14 +138,14 @@ website = {https://qcomp.org}
   volume       = {14571},
   pages        = {237--257},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-031-57249-4\_12},
+  doi          = {10.1007/978-3-031-57249-4_12},
   year         = {2024},
-  arxiv-id    = {2401.10638},
-material = {https://doi.org/10.5281/zenodo.10438916}
+  arxiv-id     = {2401.10638},
+  material     = {https://doi.org/10.5281/zenodo.10438916},
 }
 
 @inproceedings{WVJH24,  
-category     = {using},
+category       = {using},
   author       = {Kazuki Watanabe and
                   Marck van der Vegt and
                   Sebastian Junges and
@@ -153,7 +157,7 @@ category     = {using},
   publisher    = {Springer},
   year         = {2024},
   arxiv-id     = {2405.10099},
-    material = {https://doi.org/10.5281/zenodo.10946420}
+  material     = {https://doi.org/10.5281/zenodo.10946420}
 }
 
 @inproceedings{WVHRJ24,
@@ -171,18 +175,17 @@ category     = {using},
   pages        = {279--298},
   publisher    = {Springer},
   year         = {2024},
-    arxiv-id = {2401.08377},
-    material = {https://doi.org/10.5281/zenodo.10440296},
-    doi = {10.1007/978-3-031-57249-4_14}
+  arxiv-id     = {2401.08377},
+  material     = {https://doi.org/10.5281/zenodo.10440296},
+  doi          = {10.1007/978-3-031-57249-4_14},
 }
-
 
 
 % 2023
 %%%%%%
 
 @inproceedings{ABCJKM23,
-   category    = {using},
+  category     = {using},
   author       = {Roman Andriushchenko and
                   Alexander Bork and
                   Milan Ceska and
@@ -196,8 +199,9 @@ category     = {using},
   pages        = {113--135},
   publisher    = {Springer},
   year         = {2023},
+  doi          = {10.1007/978-3-031-37709-9_6},
   arxiv-id     = {2305.14149},
-  material     = {https://zenodo.org/doi/10.5281/zenodo.7874513}
+  material     = {https://zenodo.org/doi/10.5281/zenodo.7874513},
 }
 
 @inproceedings{CJJT23,
@@ -210,9 +214,9 @@ category     = {using},
   booktitle    = {{AAAI}},
   pages        = {14748--14756},
   publisher    = {{AAAI} Press},
-  doi          = {10.1609/AAAI.V37I12.26723},
   year         = {2023},
-  arxiv-id    = {2204.00755},
+  doi          = {10.1609/AAAI.V37I12.26723},
+  arxiv-id     = {2204.00755},
 }
 
 @inproceedings{HJQW23,
@@ -227,10 +231,10 @@ category     = {using},
   volume       = {13993},
   pages        = {469--488},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-031-30823-9\_24},
   year         = {2023},
+  doi          = {10.1007/978-3-031-30823-9_24},
   arxiv-id     = {2301.10197},
-  material     = {https://doi.org/10.5281/zenodo.7509474}
+  material     = {https://doi.org/10.5281/zenodo.7509474},
 }
 
 @inproceedings{JVIRWBMZWZ23,
@@ -253,8 +257,9 @@ category     = {using},
   pages        = {101--109},
   publisher    = {Springer},
   year         = {2023},
+  doi          = {10.1007/978-3-031-43835-6_7},
   material     = {https://staminachecker.org/results/qest23},
-  website      = {https://staminachecker.org}
+  website      = {https://staminachecker.org},
 }
 
 @inproceedings{VJJ23,
@@ -268,8 +273,10 @@ category     = {using},
   volume       = {13993},
   pages        = {508--526},
   publisher    = {Springer},
-  year         = {2023}
+  year         = {2023},
+  doi          = {10.1007/978-3-031-30823-9_26},
 }
+
 
 % 2022
 %%%%%%
@@ -288,25 +295,25 @@ category     = {using},
   pages     = {26--47},
   publisher = {Springer},
   year      = {2022},
-  doi       = {10.1007/978-3-031-13188-2\_2},
+  doi       = {10.1007/978-3-031-13188-2_2},
   arxiv-id  = {2205.08300},
   material  = {https://doi.org/10.5281/zenodo.6523863},
 }
 
 @article{BCJJKT22,
-    category  = {using},
-    author = {Thom Badings and
-              Murat Cubuktepe and
-              Nils Jansen and
-              Sebastian Junges and
-              Joost{-}Pieter Katoen and
-              Ufuk Topcu},
-    title = {Scenario-Based Verification of Uncertain Parametric  MDPs},
-    journal = {{STTT}},
-    material = {https://doi.org/10.5281/zenodo.6674060},
-    year = {2022},
-    arxiv-id = {2112.13020},
-    doi = {10.1007/s10009-022-00673-z}
+  category  = {using},
+  author    = {Thom Badings and
+               Murat Cubuktepe and
+               Nils Jansen and
+               Sebastian Junges and
+               Joost{-}Pieter Katoen and
+               Ufuk Topcu},
+  title     = {Scenario-Based Verification of Uncertain Parametric  MDPs},
+  journal   = {{STTT}},
+  year      = {2022},
+  doi       = {10.1007/s10009-022-00673-z},
+  arxiv-id  = {2112.13020},
+  material  = {https://doi.org/10.5281/zenodo.6674060},
 }
 
 @inproceedings{BKQ22,
@@ -320,10 +327,10 @@ category     = {using},
   volume       = {13244},
   pages        = {22--40},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-030-99527-0\_2},
   year         = {2022},
+  doi          = {10.1007/978-3-030-99527-0_2},
   material     = {https://doi.org/10.5281/zenodo.5643643},
-  arxiv-id     = {2201.08772}
+  arxiv-id     = {2201.08772},
 }
 
 @inproceedings{BVKKS22,
@@ -341,7 +348,7 @@ category     = {using},
   pages     = {713--732},
   publisher = {Springer},
   year      = {2022},
-  doi       = {10.1007/978-3-031-06773-0\_38},
+  doi       = {10.1007/978-3-031-06773-0_38},
   arxiv-id  = {2202.02829},
   material  = {https://doi.org/10.5281/zenodo.5834212},
 }
@@ -355,10 +362,10 @@ category     = {using},
                Ufuk Topcu},
   title     = {Convex Optimization for Parameter Synthesis in MDPs},
   journal   = {{IEEE} Trans. Autom. Control.},
-  arxiv-id    = {2107.00108},
-  material = {https://doi.org/10.5281/zenodo.5745850},
   year      = {2022},
-  doi = {10.1109/TAC.2021.3133265}
+  doi       = {10.1109/TAC.2021.3133265},
+  arxiv-id  = {2107.00108},
+  material  = {https://doi.org/10.5281/zenodo.5745850},
 }
 
 @article{HJKQV22,
@@ -376,7 +383,7 @@ category     = {using},
   year      = {2022},
   doi       = {10.1007/s10009-021-00633-z},
   arxiv-id  = {2002.07080},
-  website   = {http://stormchecker.org/benchmarks.html},
+  website   = {https://stormchecker.org/benchmarks.html},
   material  = {https://doi.org/10.5281/zenodo.4017717},
 }
 
@@ -393,9 +400,9 @@ category     = {using},
   volume       = {13182},
   pages        = {127--150},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-030-94583-1\_7},
   year         = {2022},
-  arxiv-id     = {2111.04407}
+  doi          = {10.1007/978-3-030-94583-1_7},
+  arxiv-id     = {2111.04407},
 }
 
 @inproceedings{JJK22,
@@ -409,28 +416,29 @@ category     = {using},
   volume       = {13660},
   pages        = {407--437},
   publisher    = {Springer},
+  doi          = {10.1007/978-3-031-22337-2_20},
   year         = {2022},
-  arxiv-id     = {2207.06801}
+  arxiv-id     = {2207.06801},
 }
 
 @inproceedings{JS22,
   category     = {using},
-  author = {Sebastian Junges and Matthijs T. J. Spaan},
-  title = {Abstraction-Refinement for Hierarchical Probabilistic Models},
-  booktitle = {{CAV}},
-  material = {https://doi.org/10.5281/zenodo.6524788},
-  year = {2022},
-  pages = {102--123},
-  series = {{LNCS}},
-  volume = {13371},
-  publisher = {Springer},
-  doi = {10.1007/978-3-031-13185-1_6},
-  arxiv-id = {2206.02653},
-  repo = {https://github.com/sjunges/level-up}
+  author       = {Sebastian Junges and Matthijs T. J. Spaan},
+  title        = {Abstraction-Refinement for Hierarchical Probabilistic Models},
+  booktitle    = {{CAV}},
+  material     = {https://doi.org/10.5281/zenodo.6524788},
+  year         = {2022},
+  pages        = {102--123},
+  series       = {{LNCS}},
+  volume       = {13371},
+  publisher    = {Springer},
+  doi          = {10.1007/978-3-031-13185-1_6},
+  arxiv-id     = {2206.02653},
+  repo         = {https://github.com/sjunges/level-up},
 }
 
 @article{QJK22,
-  category  = {feature},
+  category     = {feature},
   author       = {Tim Quatmann and
                   Sebastian Junges and
                   Joost{-}Pieter Katoen},
@@ -439,9 +447,9 @@ category     = {using},
   volume       = {60},
   number       = {1},
   pages        = {33--86},
-  doi          = {10.1007/s10703-021-00364-6},
   year         = {2022},
-  material  = {https://doi.org/10.5281/zenodo.4298643}
+  doi          = {10.1007/s10703-021-00364-6},
+  material     = {https://doi.org/10.5281/zenodo.4298643},
 }
 
 @inproceedings{SSK22,
@@ -455,9 +463,9 @@ category     = {using},
   volume       = {13479},
   pages        = {107--130},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-031-16336-4\_6},
   year         = {2022},
-  material     = {https://doi.org/10.5281/zenodo.6793377}
+  doi          = {10.1007/978-3-031-16336-4_6},
+  material     = {https://doi.org/10.5281/zenodo.6793377},
 }
 
 @article{VBKA22,
@@ -493,6 +501,7 @@ category     = {using},
   website   = {https://www.stormchecker.org/publications/dfts-for-railway-stations},
 }
 
+
 % 2021
 %%%%%%
 
@@ -503,10 +512,10 @@ category     = {using},
                Sebastian Junges and
                Joost-Pieter Katoen},
   title     = {Counterexample-guided Inductive Synthesis for Probabilistic Systems},
-  journal = {{Formal Asp. Comput.}},
-    year = {2021},
-   doi = {10.1007/s00165-021-00547-2},
-   repo = {https://github.com/randriu/synthesis}
+  journal   = {{Formal Asp. Comput.}},
+  year      = {2021},
+  doi       = {10.1007/s00165-021-00547-2},
+  repo      = {https://github.com/randriu/synthesis},
 }
 
 @inproceedings{CJJMST21,
@@ -521,11 +530,12 @@ category     = {using},
   booktitle = {{AAAI}},
   pages     = {11792--11800},
   publisher = {{AAAI} Press},
-  year      = {2021}
+  year      = {2021},
+  doi       = {10.1609/AAAI.V35I13.17401},
 }
 
 @inproceedings{HKKS21,
-category  = {using},
+  category     = {using},
   author       = {Arnd Hartmanns and
                   Joost{-}Pieter Katoen and
                   Bram Kohlen and
@@ -536,12 +546,12 @@ category  = {using},
   volume       = {12846},
   pages        = {39--58},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-030-85172-9\_3},
-  year         = {2021}
+  doi          = {10.1007/978-3-030-85172-9_3},
+  year         = {2021},
 }
 
 @inproceedings{HJVMSV21,
- category={using},
+ category     = {using},
  author       = {Steven Holtzen and
                   Sebastian Junges and
                   Marcell Vazquez{-}Chanlatte and
@@ -554,14 +564,14 @@ category  = {using},
   volume       = {12760},
   pages        = {577--601},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-030-81688-9\_27},
   year         = {2021},
+  doi          = {10.1007/978-3-030-81688-9_27},
+  arxiv-id     = {2105.12326},
   material     = {https://doi.org/10.5281/zenodo.4726264},
-  arxiv-id     = {2105.12326}
 }
 
 @inproceedings{JJS21,
-  category = {feature},
+  category     = {feature},
   author       = {Sebastian Junges and
                   Nils Jansen and
                   Sanjit A. Seshia},
@@ -571,10 +581,10 @@ category  = {using},
   volume       = {12760},
   pages        = {602--625},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-030-81688-9\_28},
   year         = {2021},
+  doi          = {10.1007/978-3-030-81688-9_28},
   material     = {https://doi.org/10.5281/zenodo.4784940},
-  arxiv-id     = {2007.00085}
+  arxiv-id     = {2007.00085},
 }
 
 @inproceedings{JTS21,
@@ -588,9 +598,9 @@ category  = {using},
   volume    = {12760},
   publisher = {Springer},
   year      = {2021},
+  doi       = {10.1007/978-3-030-81688-9_26},
   repo      = {https://github.com/monitoring-MDPs/premise},
-  material  = {https://zenodo.org/record/4724623#.YUo4Vy0RqgQ},
-  doi       = {10.1007/978-3-030-81688-9\_26},
+  material  = {https://zenodo.org/record/4724623},
 }
 
 @inproceedings{KKVB21,
@@ -606,7 +616,7 @@ category  = {using},
   pages     = {180--197},
   publisher = {Springer},
   year      = {2021},
-  doi       = {10.1007/978-3-030-76384-8\_12},
+  doi       = {10.1007/978-3-030-76384-8_12},
 }
 
 @inproceedings{KKVZS21,
@@ -641,7 +651,7 @@ category  = {using},
 }
 
 @inproceedings{PKPB21,
-  category  = {using},
+  category     = {using},
   author       = {Stefan Pranger and
                   Bettina K{\"{o}}nighofer and
                   Lukas Posch and
@@ -653,10 +663,10 @@ category  = {using},
   volume       = {12971},
   pages        = {222--228},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-030-88885-5\_15},
   year         = {2021},
-  arxiv-id  = {2105.12588},
-  website = {https://tempest-synthesis.org}
+  doi          = {10.1007/978-3-030-88885-5_15},
+  arxiv-id     = {2105.12588},
+  website      = {https://tempest-synthesis.org},
 }
 
 @inproceedings{QK21,
@@ -669,10 +679,9 @@ category  = {using},
   volume    = {12651},
   pages     = {230--249},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-72016-2\_13},
-  url       = {https://doi.org/10.1007/978-3-030-72016-2_13},
-  arxiv-id  = {2010.13566},
   year      = {2021},
+  doi       = {10.1007/978-3-030-72016-2_13},
+  arxiv-id  = {2010.13566},
   material  = {https://doi.org/10.5281/zenodo.4121878},
 }
 
@@ -688,11 +697,11 @@ category  = {using},
   pages        = {173--190},
   publisher    = {Springer},
   year         = {2021},
-
+  doi          = {10.1007/978-3-030-72016-2_10},
 }
 
 @inproceedings{SK21,
-  category  = {using},
+  category     = {using},
   author       = {Bahare Salmani and
                   Joost{-}Pieter Katoen},
   title        = {Fine-Tuning the Odds in Bayesian Networks},
@@ -701,9 +710,9 @@ category  = {using},
   volume       = {12897},
   pages        = {268--283},
   publisher    = {Springer},
-  doi          = {10.1007/978-3-030-86772-0\_20},
   year         = {2021},
-  arxiv-id    = {2105.14371}
+  doi          = {10.1007/978-3-030-86772-0_20},
+  arxiv-id     = {2105.14371},
 }
 
 @inproceedings{ZZAAFJ21,
@@ -720,11 +729,12 @@ category  = {using},
   volume    = {12597},
   pages     = {486--508},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-67067-2\_22},
   year      = {2021},
-  pdf-url   = {http://arthuraa.net/docs/netter.pdf},
-  material  = {https://github.com/arthuraa/netter}
+  doi       = {10.1007/978-3-030-67067-2_22},
+  pdf-url   = {https://arthuraa.net/docs/netter.pdf},
+  material  = {https://github.com/arthuraa/netter},
 }
+
 
 % 2020
 %%%%%%
@@ -743,18 +753,14 @@ category  = {using},
                Bernhard Steffen},
   title     = {On Correctness, Precision, and Performance in Quantitative Verification
                - QComp 2020 Competition Report},
-  booktitle = {Leveraging Applications of Formal Methods, Verification and Validation:
-               Tools and Trends - 9th International Symposium on Leveraging Applications
-               of Formal Methods, ISoLA 2020, Rhodes, Greece, October 20-30, 2020,
-               Proceedings, Part {IV}},
+  booktitle = {ISoLA {(4)}},
   series    = {{LNCS}},
   volume    = {12479},
   pages     = {216--241},
   publisher = {Springer},
   year      = {2020},
-  url       = {https://doi.org/10.1007/978-3-030-83723-5\_15},
-  doi       = {10.1007/978-3-030-83723-5\_15},
-  website   = {https://qcomp.org/competition/2020/}
+  doi       = {10.1007/978-3-030-83723-5_15},
+  website   = {https://qcomp.org/competition/2020/},
 }
 
 @inproceedings{BJKQ20,
@@ -769,10 +775,10 @@ category  = {using},
   volume    = {12302},
   pages     = {288--304},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-59152-6\_16},
   year      = {2020},
+  doi       = {10.1007/978-3-030-59152-6_16},
   arxiv-id  = {2007.00102},
-  material  = {https://doi.org/10.5281/zenodo.3924577}
+  material  = {https://doi.org/10.5281/zenodo.3924577},
 }
 
 @inproceedings{DKQR20,
@@ -787,10 +793,10 @@ category  = {using},
   volume    = {12078},
   pages     = {346--364},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-45190-5\_19},
   year      = {2020},
+  doi       = {10.1007/978-3-030-45190-5_19},
   arxiv-id  = {1910.11024},
-  material  = {https://doi.org/10.6084/m9.figshare.11569485}
+  material  = {https://doi.org/10.6084/m9.figshare.11569485},
 }
 
 @article{HJKQ20,
@@ -806,7 +812,7 @@ category  = {using},
   pages     = {1483--1522},
   doi       = {10.1007/s10817-020-09574-9},
   year      = {2020},
-  material  = {https://doi.org/10.5281/zenodo.3894716}
+  material  = {https://doi.org/10.5281/zenodo.3894716},
 }
 
 @inproceedings{JKJSB20,
@@ -822,7 +828,8 @@ category  = {using},
   volume    = {171},
   pages     = {3:1--3:16},
   publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
-  year      = {2020}
+  year      = {2020},
+  doi       = {10.4230/LIPICS.CONCUR.2020.3},
 }
 
 @inproceedings{SK20,
@@ -835,10 +842,11 @@ category  = {using},
   volume    = {12289},
   pages     = {115--133},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-59854-9\_9},
   year      = {2020},
-  arxiv-id  = {2007.15071}
+  doi       = {10.1007/978-3-030-59854-9_9},
+  arxiv-id  = {2007.15071},
 }
+
 
 % 2019
 %%%%%%
@@ -855,9 +863,9 @@ category  = {using},
   volume    = {11800},
   pages     = {101--120},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-30942-8\_8},
   year      = {2019},
-  arxiv-id  = {1904.12371}
+  doi       = {10.1007/978-3-030-30942-8_8},
+  arxiv-id  = {1904.12371},
 }
 
 @inproceedings{CJJK19,
@@ -872,9 +880,9 @@ category  = {using},
   volume    = {11428},
   pages     = {172--190},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-17465-1\_10},
   year      = {2019},
-  arxiv-id  = {1902.05727}
+  doi       = {10.1007/978-3-030-17465-1_10},
+  arxiv-id  = {1902.05727},
 }
 
 @article{GJKKV19,
@@ -888,10 +896,10 @@ category  = {using},
   journal   = {Reliab. Eng. Syst. Saf.},
   volume    = {186},
   pages     = {37--50},
-  doi       = {10.1016/j.ress.2019.02.005},
   year      = {2019},
+  doi       = {10.1016/j.ress.2019.02.005},
   arxiv-id  = {1903.05361},
-  website   = {http://www.stormchecker.org/publications/dfts-for-vehicle-guidance-systems.html},
+  website   = {https://www.stormchecker.org/publications/dfts-for-vehicle-guidance-systems.html},
 }
 
 @inproceedings{HHHKKKPQRS19,
@@ -913,10 +921,10 @@ category  = {using},
   volume    = {11429},
   pages     = {69--92},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-17502-3\_5},
   year      = {2019},
+  doi       = {10.1007/978-3-030-17502-3_5},
   website   = {https://qcomp.org/competition/2019/},
-  material  = {https://doi.org/10.5281/zenodo.2628301}
+  material  = {https://doi.org/10.5281/zenodo.2628301},
 }
 
 @inproceedings{HKPQR19,
@@ -932,12 +940,13 @@ category  = {using},
   volume    = {11427},
   pages     = {344--350},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-17462-0\_20},
   year      = {2019},
-  website   = {https://qcomp.org/benchmarks/}
+  doi       = {10.1007/978-3-030-17462-0_20},
+  website   = {https://qcomp.org/benchmarks/},
 }
 
 @inproceedings{SJK19,
+  category     = {using},
   author       = {Jip Spel and
                   Sebastian Junges and
                   Joost{-}Pieter Katoen},
@@ -947,7 +956,8 @@ category  = {using},
   volume       = {11781},
   pages        = {479--496},
   publisher    = {Springer},
-  year         = {2019}
+  year         = {2019},
+  doi          = {10.1007/978-3-030-31784-3_28},
 }
 
 @inproceedings{VWKN19,
@@ -963,9 +973,10 @@ category  = {using},
   volume    = {11687},
   pages     = {40--58},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-27008-7\_3},
-  year      = {2019}
+  year      = {2019},
+  doi       = {10.1007/978-3-030-27008-7_3},
 }
+
 
 % 2018
 %%%%%%
@@ -983,8 +994,8 @@ category  = {using},
   volume    = {11138},
   pages     = {160--176},
   publisher = {Springer},
-  doi       = {10.1007/978-3-030-01090-4\_10},
-  year      = {2018}
+  year      = {2018},
+  doi       = {10.1007/978-3-030-01090-4_10},
 }
 
 @inproceedings{HJKQ18,
@@ -1000,8 +1011,8 @@ category  = {using},
   pages     = {320--339},
   publisher = {Springer},
   year      = {2018},
-  doi       = {10.1007/978-3-319-89963-3\_19},
-  material  = {https://doi.org/10.5281/zenodo.1181896}
+  doi       = {10.1007/978-3-319-89963-3_19},
+  material  = {https://doi.org/10.5281/zenodo.1181896},
 }
 
 @inproceedings{JJKTZH18,
@@ -1018,8 +1029,8 @@ category  = {using},
   volume    = {11024},
   pages     = {207--222},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-99154-2\_13},
-  year      = {2018}
+  year      = {2018},
+  doi       = {10.1007/978-3-319-99154-2_13},
 }
 
 @inproceedings{JJWQWKB18,
@@ -1036,8 +1047,8 @@ category  = {using},
   pages     = {519--529},
   publisher = {{AUAI} Press},
   year      = {2018},
-  pdf-url   = {http://auai.org/uai2018/proceedings/papers/195.pdf},
-  arxiv-id  = {1710.10294}
+  pdf-url   = {https://auai.org/uai2018/proceedings/papers/195.pdf},
+  arxiv-id  = {1710.10294},
 }
 
 @inproceedings{JKSV18,
@@ -1054,10 +1065,10 @@ category  = {using},
   pages     = {272--293},
   publisher = {Springer},
   year      = {2018},
+  doi       = {10.1007/978-3-319-91268-4_14},
   arxiv-id  = {1803.05376},
-  website   = {http://www.stormchecker.org/publications/gspn-semantics-for-dfts.html},
+  website   = {https://www.stormchecker.org/publications/gspn-semantics-for-dfts.html},
   material  = {https://github.com/moves-rwth/dft-gspn-examples},
-  doi       = {10.1007/978-3-319-91268-4\_14},
 }
 
 @inproceedings{QK18,
@@ -1071,9 +1082,9 @@ category  = {using},
   pages     = {643--661},
   publisher = {Springer},
   year      = {2018},
-  doi       = {10.1007/978-3-319-96145-3\_37},
+  doi       = {10.1007/978-3-319-96145-3_37},
   material  = {https://doi.org/10.6084/m9.figshare.6139052},
-  arxiv-id  = {1804.05001}
+  arxiv-id  = {1804.05001},
 }
 
 @article{VJK18,
@@ -1090,6 +1101,7 @@ category  = {using},
   doi       = {10.1109/TII.2017.2710316},
 }
 
+
 % 2017
 %%%%%%
 
@@ -1104,8 +1116,8 @@ category  = {using},
   booktitle = {{SRDS}},
   pages     = {94--103},
   publisher = {{IEEE} Computer Society},
+  year      = {2017},
   doi       = {10.1109/SRDS.2017.22},
-  year      = {2017}
 }
 
 @inproceedings{BDHHJT17,
@@ -1121,9 +1133,9 @@ category  = {using},
   series    = {{LNCS}},
   volume    = {10206},
   pages     = {151--168},
-  doi       = {10.1007/978-3-662-54580-5\_9},
   year      = {2017},
-  website   = {https://jani-spec.org}
+  doi       = {10.1007/978-3-662-54580-5_9},
+  website   = {https://jani-spec.org},
 }
 
 @inproceedings{CJJKPPT17,
@@ -1141,9 +1153,9 @@ category  = {using},
   series    = {{LNCS}},
   volume    = {10206},
   pages     = {133--150},
-  doi       = {10.1007/978-3-662-54580-5\_8},
   year      = {2017},
-  arxiv-id  = {1702.00063s}
+  doi       = {10.1007/978-3-662-54580-5_8},
+  arxiv-id  = {1702.00063},
 }
 
 @inproceedings{DJKV17,
@@ -1158,11 +1170,11 @@ category  = {using},
   volume    = {10427},
   pages     = {592--600},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-63390-9\_31},
   year      = {2017},
+  doi       = {10.1007/978-3-319-63390-9_31},
   arxiv-id  = {1702.04311},
-  website   = {http://stormchecker.org/benchmarks.html},
-  material  = {http://stormchecker.org/documentation/obtain-storm/vm.html#storm-010-20172}
+  website   = {https://stormchecker.org/benchmarks.html},
+  material  = {https://stormchecker.org/documentation/obtain-storm/vm.html#storm-010-20172},
 }
 
 @inproceedings{GJKKV17,
@@ -1178,8 +1190,8 @@ category  = {using},
   volume    = {10488},
   pages     = {3--19},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-66266-4\_1},
-  year      = {2017}
+  year      = {2017},
+  doi       = {10.1007/978-3-319-66266-4_1},
 }
 
 @inproceedings{QJK17,
@@ -1193,11 +1205,12 @@ category  = {using},
   volume    = {10426},
   pages     = {140--159},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-63387-9\_7},
+  doi       = {10.1007/978-3-319-63387-9_7},
   year      = {2017},
   arxiv-id  = {1704.06648},
-  material  = {https://doi.org/10.5281/zenodo.4298643}
+  material  = {https://doi.org/10.5281/zenodo.4298643},
 }
+
 
 % 2016
 %%%%%%
@@ -1213,8 +1226,8 @@ category  = {using},
   booktitle = {{SRDS}},
   pages     = {307--316},
   publisher = {{IEEE} Computer Society},
+  year      = {2016},
   doi       = {10.1109/SRDS.2016.048},
-  year      = {2016}
 }
 
 @article{DJKV16,
@@ -1242,9 +1255,9 @@ category  = {using},
   series    = {{LNCS}},
   volume    = {9938},
   pages     = {68--85},
-  doi       = {10.1007/978-3-319-46520-3\_5},
   year      = {2016},
-  arxiv-id  = {1605.04477}
+  doi       = {10.1007/978-3-319-46520-3_5},
+  arxiv-id  = {1605.04477},
 }
 
 @inproceedings{JJDTK16,
@@ -1260,9 +1273,9 @@ category  = {using},
   volume    = {9636},
   pages     = {130--146},
   publisher = {Springer},
-  doi       = {10.1007/978-3-662-49674-9\_8},
   year      = {2016},
-  arxiv-id  = {1510.05880}
+  doi       = {10.1007/978-3-662-49674-9_8},
+  arxiv-id  = {1510.05880},
 }
 
 @inproceedings{Kat16,
@@ -1271,9 +1284,9 @@ category  = {using},
   booktitle = {{LICS}},
   pages     = {31--45},
   publisher = {{ACM}},
-  doi       = {10.1145/2933575.2934574},
   year      = {2016},
-  pdf-url   = {http://www-i2.informatik.rwth-aachen.de/pub/index.php?type=download&pub_id=1296}
+  doi       = {10.1145/2933575.2934574},
+  pdf-url   = {https://moves.rwth-aachen.de/wp-content/uploads/lics2016_tutorial_katoen.pdf}
 }
 
 @inproceedings{LVATJ16,
@@ -1289,8 +1302,8 @@ category  = {using},
   series    = {{LNCS}},
   volume    = {9952},
   pages     = {496--514},
-  doi       = {10.1007/978-3-319-47166-2\_34},
-  year      = {2016}
+  year      = {2016},
+  doi       = {10.1007/978-3-319-47166-2_34},
 }
 
 @inproceedings{QDJJK16,
@@ -1305,9 +1318,9 @@ category  = {using},
   series    = {{LNCS}},
   volume    = {9938},
   pages     = {50--67},
-  doi       = {10.1007/978-3-319-46520-3\_4},
   year      = {2016},
-  arxiv-id  = {1602.05113}
+  doi       = {10.1007/978-3-319-46520-3_4},
+  arxiv-id  = {1602.05113},
 }
 
 @inproceedings{VJK16,
@@ -1322,10 +1335,11 @@ category  = {using},
   volume    = {9922},
   pages     = {253--265},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-45477-1\_20},
   year      = {2016},
-  arxiv-id  = {abs/1604.07474}
+  doi       = {10.1007/978-3-319-45477-1_20},
+  arxiv-id  = {1604.07474},
 }
+
 
 % 2015
 %%%%%%
@@ -1346,9 +1360,9 @@ category  = {using},
   volume    = {9206},
   pages     = {214--231},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-21690-4\_13},
   year      = {2015},
-  website   = {https://moves-rwth.github.io/prophesy/}
+  doi       = {10.1007/978-3-319-21690-4_13},
+  website   = {https://moves-rwth.github.io/prophesy/},
 }
 
 @inproceedings{QJDWAKB15,
@@ -1366,9 +1380,10 @@ category  = {using},
   volume    = {9109},
   pages     = {435--452},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-19249-9\_27},
-  year      = {2015}
+  year      = {2015},
+  doi       = {10.1007/978-3-319-19249-9_27},
 }
+
 
 % 2014
 %%%%%%
@@ -1388,9 +1403,9 @@ category  = {using},
   volume    = {8837},
   pages     = {98--114},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-11936-6\_8},
   year      = {2014},
-  arxiv-id  = {1402.2967}
+  doi       = {10.1007/978-3-319-11936-6_8},
+  arxiv-id  = {1402.2967},
 }
 
 @inproceedings{DJWAK14,
@@ -1406,9 +1421,10 @@ category  = {using},
   volume    = {8837},
   pages     = {146--162},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-11936-6\_11},
-  year      = {2014}
+  year      = {2014},
+  doi       = {10.1007/978-3-319-11936-6_11},
 }
+
 
 % 1997
 %%%%%%
@@ -1422,6 +1438,6 @@ category  = {using},
   volume    = {28},
   number    = {2-3},
   pages     = {171--192},
+  year      = {1997},
   doi       = {10.1016/S0167-6423(96)00019-6},
-  year      = {1997}
 }

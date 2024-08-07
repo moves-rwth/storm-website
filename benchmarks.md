@@ -20,7 +20,7 @@ Result summary for the *often ε-correct* track:
 
 ![Article]({{ '/pics/qcomp2020ofteneps.jpg' | relative_url }} "Article"){: .center-image width="768"}
 
-Further results for all tracks can be found in the [competition report](https://doi.org/10.1007/978-3-030-83723-5_15){:target="_blank"} and the detailed result tables on the [QComp 2020 website](http://qcomp.org/competition/2020/){:target="_blank"}.
+Further results for all tracks can be found in the [competition report](https://doi.org/10.1007/978-3-030-83723-5_15){:target="_blank"} and the detailed result tables on the [QComp 2020 website](https://qcomp.org/competition/2020/){:target="_blank"}.
 
 
 ## The Probabilistic Model Checker Storm {% cite HJKQV22 %}
@@ -28,7 +28,7 @@ Further results for all tracks can be found in the [competition report](https://
 The benchmarks were run on 4 cores of an Intel Xeon Platinum 8160 Processor with 12GB of memory available. The timeout was 1800 seconds.
 
 #### Benchmarks
-All benchmarks from [QComp 2019](http://qcomp.org/competition/2019/index.html) were considered, except for 4 PTA Benchmarks that were not compatible with Storm.
+All benchmarks from [QComp 2019](https://qcomp.org/competition/2019/index.html) were considered, except for 4 PTA Benchmarks that were not compatible with Storm.
 
 #### Results
 <a target="_blank" href="https://moves-rwth.github.io/storm-benchmark-logs/docs/2020-09/table.html" class="btn btn-primary btn-md active" role="button">Show interactive result table</a>
@@ -38,8 +38,8 @@ All benchmarks from [QComp 2019](http://qcomp.org/competition/2019/index.html) w
 ## QComp 2019 {% cite HHHKKKPQRS19 %}
 
 Storm participated in the *2019 Comparison of Tools for the Analysis of Quantitative Formal Models (QComp 2019)*.
-Details on the competition, the participating tools and the QComp benchmark set can be found on the [competition website](http://qcomp.org/competition/2019/index.html){:target="_blank"}.
-Detailed results are available in the [interactive results table](http://qcomp.org/competition/2019/results/index.html){:target="_blank"}.
+Details on the competition, the participating tools and the QComp benchmark set can be found on the [competition website](https://qcomp.org/competition/2019/index.html){:target="_blank"}.
+Detailed results are available in the [interactive results table](https://qcomp.org/competition/2019/results/index.html){:target="_blank"}.
 
 ## A Storm is Coming: A Modern Probabilistic Model Checker {% cite DJKV17 %}
 
@@ -49,7 +49,7 @@ The benchmarks were conducted on a HP BL685C G7. All tools had up to eight cores
 
 #### Benchmarks
 
-In this paper, we use all non-PTA models from the [PRISM benchmark suite](http://www.prismmodelchecker.org/benchmarks/){:target="_blank"} and the [IMCA](https://github.com/buschko/imca){:target="_blank"} benchmarks for MAs.
+In this paper, we use all non-PTA models from the [PRISM benchmark suite](https://www.prismmodelchecker.org/benchmarks/){:target="_blank"} and the [IMCA](https://github.com/buschko/imca){:target="_blank"} benchmarks for MAs.
 
 #### Results
 In order to share the results, we provide them as a set of log files. To make the results more accessible, we also give four tables (one for each model type: DTMC, CTMC, MDP and MA). Using the buttons near the top of the table, you can select which of the configurations of the tools are displayed side-by-side (by default all configurations of participating tools are shown). For example, clicking `Storm-sparse` toggles whether Storm's sparse engine participates in the comparison or not. As argued in the paper, it makes sense to compare "matching engines" of the tools. (For an explanation which engines are comparable, please consult the paper.) This is why there are also buttons that let you select the tool configurations that are comparable with one click (`Show sparse`, `Show hybrid`, `Show dd` and `Show exact`). The best time for each instance is marked green. By clicking on the time for a particular experiment, you are taken to the log file of that experiment.

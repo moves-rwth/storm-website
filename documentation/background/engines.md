@@ -14,7 +14,7 @@ As with so many things, there is no one-size-fits-all in probabilistic model che
 
 ## Sparse
 
-Storm's main engine is the sparse engine in the sense that it tends to have the most features. It takes the model description and directly builds a representation based on *explicit data structures*, mainly [bit vectors](https://en.wikipedia.org/wiki/Bit_array){:target="_blank"} and [sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix){:target="_blank"}. Then, model checking is performed using these data structures. Since these permit easy access to single elements, they are standard representations for many tasks involved in the solution procedure (like solving linear equations). This enables the use of off-the-shelf libraries, for instance [Eigen](http://eigen.tuxfamily.org){:target="_blank"} or [gmm++](http://getfem.org/gmm.html){:target="_blank"}, that implement sophisticated solution methods.
+Storm's main engine is the sparse engine in the sense that it tends to have the most features. It takes the model description and directly builds a representation based on *explicit data structures*, mainly [bit vectors](https://en.wikipedia.org/wiki/Bit_array){:target="_blank"} and [sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix){:target="_blank"}. Then, model checking is performed using these data structures. Since these permit easy access to single elements, they are standard representations for many tasks involved in the solution procedure (like solving linear equations). This enables the use of off-the-shelf libraries, for instance [Eigen](https://eigen.tuxfamily.org){:target="_blank"} or [gmm++](https://getfem.org/gmm.html){:target="_blank"}, that implement sophisticated solution methods.
 
 **Select**: `--engine sparse` or `-e sparse`
 
@@ -83,7 +83,7 @@ All engines so far have the requirement that a representation of the model needs
 All other engines are not suited for models with an infinite state space. The approach of the abstraction-refinement engine is to start with a coarse over-approximation of the concrete model. This *abstract model* is then analyzed. Based on the result, one of two things happen: either the result carries over to the concrete model and and an answer can be returned or the abstraction needs to be refined. In the latter case, the abstraction is analyzed again and the loop is repeated until a conclusive answer can be given.
 
 {:.alert .alert-danger}
-This engine relies heavily on SMT solving (more concretely an enumeration of all satisfying assignments of a formula) and Craig interpolation. Therefore, this engine needs [MathSAT](http://mathsat.fbk.eu/){:target="_blank" .alert-link} and Storm has to be built with MathSAT support, which requires a [manual setup]({{ '/documentation/obtain-storm/manual-configuration.html#mathsat' | relative_url }}){:.alert-link}.
+This engine relies heavily on SMT solving (more concretely an enumeration of all satisfying assignments of a formula) and Craig interpolation. Therefore, this engine needs [MathSAT](https://mathsat.fbk.eu/){:target="_blank" .alert-link} and Storm has to be built with MathSAT support, which requires a [manual setup]({{ '/documentation/obtain-storm/manual-configuration.html#mathsat' | relative_url }}){:.alert-link}.
 
 **Select**: `--engine abs` or `-e abs`
 

@@ -25,7 +25,7 @@ The current support focusses on five modes, of which two are more experimental:
 We outline these modes in more detail below.
 In what follows, Storm typically assumes that all occurring parameters are graph-preserving, that is, they do not influence the topology of the underlying Markov model.
 
-To illustrate the functionality, we use a bounded retransmission protocol. This example is an adaption of the Bounded Retransmission Protocol from the [PRISM website](http://www.prismmodelchecker.org/casestudies/brp.php){:target="_blank"}. Here, we have two channels whose reliabilities are represented by parameters `pL` and `pK`.
+To illustrate the functionality, we use a bounded retransmission protocol. This example is an adaption of the Bounded Retransmission Protocol from the [PRISM website](https://www.prismmodelchecker.org/casestudies/brp.php){:target="_blank"}. Here, we have two channels whose reliabilities are represented by parameters `pL` and `pK`.
 
 {% include includes/show_model.html name="parametric version of the Bounded Retransmission Protocol" class="parametric_brp" path="prism/brp.pm" %}
 
