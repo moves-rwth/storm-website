@@ -104,7 +104,9 @@ The core developers are
 - [Sebastian Junges](https://sjunges.github.io){:target="_blank"} Radboud University
 - [Joost-Pieter Katoen](https://moves.rwth-aachen.de/people/katoen/){:target="_blank"} RWTH Aachen University
 - [Tim Quatman](https://moves.rwth-aachen.de/people/quatmann/){:target="_blank"} RWTH Aachen University
-- [Matthias Volk](https://people.utwente.nl/m.volk){:target="_blank"} University of Twente
+- [Matthias Volk](https://volkm.github.io){:target="_blank"} Eindhoven University of Technology
+
+For an exhaustive list of contributors and more details, see the [Github page](https://github.com/moves-rwth/storm/graphs/contributors).
 
 ## Website
 
