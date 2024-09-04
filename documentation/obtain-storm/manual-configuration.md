@@ -11,7 +11,7 @@ layout: default
 Designed for users that need particular features and people developing under Storm, this guide will detail how to perform a manual configuration of the build process.
 
 There are a number of **cmake options** that modify how Storm is built.
-All of them can be set in the [configuration step](compile.html#configuration-step) by providing them to `cmake`.
+All of them can be set in the [configuration step](build.html#configuration-step) by providing them to `cmake`.
 To modify the options after the configuration step, you may run `ccmake ..` (assuming that you currently are in `STORM_DIR/build`). After changing these options you need to rebuild Storm using `make`.
 
 We don't detail all options here, but only selected ones.
@@ -39,8 +39,8 @@ By default, the binaries will be built specifically for your machine, because th
 
 ## Gurobi
 
-[Gurobi](http://www.gurobi.com/){:target="_blank"} is a commercial high-performance solver for (mixed-integer) linear programs (and similar problems). A free license can be obtained for academic purposes. Storm provides an implementation of its (MI)LP solver interface that uses Gurobi (provided Storm has been compiled with support for it). To enable Gurobi, specify the option `-DSTORM_USE_GUROBI=ON` and set a hint at where to find Gurobi via `-DGUROBI_ROOT=/path/to/gurobi`.
+[Gurobi](https://www.gurobi.com/){:target="_blank"} is a commercial high-performance solver for (mixed-integer) linear programs (and similar problems). A free license can be obtained for academic purposes. Storm provides an implementation of its (MI)LP solver interface that uses Gurobi (provided Storm has been compiled with support for it). To enable Gurobi, specify the option `-DSTORM_USE_GUROBI=ON` and set a hint at where to find Gurobi via `-DGUROBI_ROOT=/path/to/gurobi`.
 
 ## MathSAT
 
-[MathSAT](http://mathsat.fbk.eu/){:target="_blank"} is a high-performance SMT solver that can be used as an alternative to [Z3](https://github.com/Z3Prover/z3){:target="_blank"}. In contrast to Z3, it provides native support for AllSat (enumeration of all satisfying models of a formula) and may generate Craig interpolants. This makes MathSAT particularly useful in the [abstraction-refinement engine]({{ '/documentation/background/engines.html#abstraction-refinement' | relative_url }}). To enable MathSAT, you need to set `-DMSAT_ROOT=/path/to/mathsat/root` where MathSAT's root directory is required to contain the `include` and `lib` folders with the appropriate files (if you download and unpack it, its the directory into which you unpacked it).
+[MathSAT](https://mathsat.fbk.eu/){:target="_blank"} is a high-performance SMT solver that can be used as an alternative to [Z3](https://github.com/Z3Prover/z3){:target="_blank"}. In contrast to Z3, it provides native support for AllSat (enumeration of all satisfying models of a formula) and may generate Craig interpolants. This makes MathSAT particularly useful in the [abstraction-refinement engine]({{ '/documentation/background/engines.html#abstraction-refinement' | relative_url }}). To enable MathSAT, you need to set `-DMSAT_ROOT=/path/to/mathsat/root` where MathSAT's root directory is required to contain the `include` and `lib` folders with the appropriate files (if you download and unpack it, its the directory into which you unpacked it).

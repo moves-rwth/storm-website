@@ -14,13 +14,13 @@ categories: [Background]
 
 The PRISM language can be used to specify [DTMCs, CTMCs and MDPs]({{ '/documentation/background/models.html' | relative_url }}). Conceptually, it is a guarded command language using reactive modules. Storm supports (almost) the full PRISM language and extends it (in a straightforward way) to [Markov Automata]({{ '/documentation/background/models.html#markov-automata-mas' | relative_url }}).
 
-For more information, please read the [PRISM manual](http://www.prismmodelchecker.org/manual/ThePRISMLanguage/Introduction){:target="_blank"}. A rich collection of examples is available at the [PRISM benchmark suite](http://www.prismmodelchecker.org/benchmarks/){:target="_blank"}.
+For more information, please read the [PRISM manual](https://www.prismmodelchecker.org/manual/ThePRISMLanguage/Introduction){:target="_blank"}. A rich collection of examples is available at the [PRISM benchmark suite](https://www.prismmodelchecker.org/benchmarks/){:target="_blank"}.
 
 ## JANI
 
-JANI is a recently introduced modeling language for the landscape of probabilistic models. To allow easy parsing, JANI is based on [JSON](http://www.json.org/){:target="_blank"}. In general, JANI models can encode a variety of model types. Storm's support for JANI models covers DTMCs, CTMCs and MDPs.
+JANI is a recently introduced modeling language for the landscape of probabilistic models. To allow easy parsing, JANI is based on [JSON](https://www.json.org/){:target="_blank"}. In general, JANI models can encode a variety of model types. Storm's support for JANI models covers DTMCs, CTMCs and MDPs.
 
-For more information, please visit the [Jani specification](http://www.jani-spec.org){:target="_blank"}, where you can also find some [examples](https://github.com/ahartmanns/jani-models/){:target="_blank"}.
+For more information, please visit the [Jani specification](https://www.jani-spec.org){:target="_blank"}, where you can also find some [examples](https://github.com/ahartmanns/jani-models/){:target="_blank"}.
 
 ## GSPNs
 
@@ -28,11 +28,11 @@ For more information, please visit the [Jani specification](http://www.jani-spec
 
 ### PNML
 
-The [Petri Net Markup Language](http://www.pnml.org/){:target="_blank"} is an ISO-standardized XML format to specify Petri nets.
+The [Petri Net Markup Language](https://www.pnml.org/){:target="_blank"} is an ISO-standardized XML format to specify Petri nets.
 
 ### GreatSPN editor projects
 
-The [GreatSPN editor](http://www.di.unito.it/~amparore/mc4cslta/editor.html){:target="_blank"} is a GUI capable of specifying and verifying GSPNs. Project files (XML) specifying a single GSPN can be parsed directly by Storm.
+The [GreatSPN editor](https://github.com/greatspn/SOURCES){:target="_blank"} is a GUI capable of specifying and verifying GSPNs. Project files (XML) specifying a single GSPN can be parsed directly by Storm.
 
 ## DFTs
 
@@ -41,7 +41,7 @@ The format is a simple textual format naming the root of the tree and then lists
 
 ## Explicit
 
-In the spirit of [MRMC](http://www.mrmc-tool.org/){:target="_blank"}, Storm also supports input models specified in an explicit format. While the format closely resembles that of MRMC, it does not match exactly. Likewise, at the moment the model export of PRISM generates files that can be easily modified to be handled by Storm, but they still need to be adapted by hand.
+In the spirit of [MRMC](https://www.mrmc-tool.org/){:target="_blank"}, Storm also supports input models specified in an explicit format. While the format closely resembles that of MRMC, it does not match exactly. Likewise, at the moment the model export of PRISM generates files that can be easily modified to be handled by Storm, but they still need to be adapted by hand.
 
 ### Transition File
 

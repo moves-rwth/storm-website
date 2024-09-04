@@ -22,3 +22,13 @@ To build the website (and automatically rebuild after each modification) run the
 bundle exec jekyll serve --livereload
 ```
 If there are no errors reported, you can browse to [http://localhost:4000](http://localhost:4000) to open the website.
+
+To test whether all links in the website are valid run the following:
+```console
+bundle exec rake test
+```
+
+To test whether all links provided in published papers remain valid run the following:
+```console
+bundle exec rake test_paper_links
+```

@@ -8,7 +8,7 @@ layout: default
 {% include includes/toc.html %}
 
 
-Storm depends on [several other tools]({{ '/documentation/dependencies' | relative_url }}). Partly, they are packed with Storm. This page describes dependencies which are assumed to be present on the target system.
+Storm depends on [several other tools]({{ '/documentation/dependencies.html' | relative_url }}). Partly, they are packed with Storm. This page describes dependencies which are assumed to be present on the target system.
 We both give a general list, as well as operating system specific hints how to install them.
 
 
@@ -34,7 +34,7 @@ Required:
 Recommended:
 - [Z3](https://github.com/Z3Prover/z3){:target="_blank"} (not strictly required, but already needed for standard tasks like PRISM/JANI model building)
 - [xerces-c](https://xerces.apache.org/xerces-c/){:target="_blank"} (needed for the parsing and export of XML files, in particular for GSPNs)
-- [MathSAT](http://mathsat.fbk.eu/){:target="_blank"} (needed by the abstraction refinement engine, needs to be configured manually during the [configuration](manual-configuration.html#mathsat))
+- [MathSAT](https://mathsat.fbk.eu/){:target="_blank"} (needed by the abstraction refinement engine, needs to be configured manually during the [configuration](manual-configuration.html#mathsat))
 
 
 ## OS specific preparations
@@ -116,5 +116,5 @@ There may be problems with this auto-detection mechanism if you have multiple ve
 
 ## Boost
 
-Storm requires [Boost](http://www.boost.org/){:target="_blank"} to be available in a recent version. On the [supported operating systems](requirements.html) this can be easily achieved with readily available package managers.
-If Boost is not present in a standard system locations (for example because it was manually built), it might not automatically be found by Storm. You can make Storm aware of the Boost location by passing `-DBOOST_ROOT=/path/to/boost` to the `cmake` invocation in the [configuration step](installation.html#configuration-step).
+Storm requires [Boost](https://www.boost.org/){:target="_blank"} to be available in a recent version. On the [supported operating systems](build.html#supported-operating-systems) this can be easily achieved with readily available package managers.
+If Boost is not present in a standard system locations (for example because it was manually built), it might not automatically be found by Storm. You can make Storm aware of the Boost location by passing `-DBOOST_ROOT=/path/to/boost` to the `cmake` invocation in the [configuration step](build.html#configuration-step).
