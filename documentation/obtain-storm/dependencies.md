@@ -14,7 +14,7 @@ We both give a general list, as well as operating system specific hints how to i
 
 ## Compiler
 
-For the compilation step, a C++17-compliant compiler is required. Storm is known to work with GCC, Clang, and AppleClang.
+For the compilation step, a C++20-compliant compiler is required. Storm is known to work with GCC, Clang, and AppleClang.
 
 ## General Dependencies
 
