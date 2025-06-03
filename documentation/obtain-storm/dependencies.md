@@ -57,12 +57,12 @@ For troubleshooting building on ARM-based <i class="fa fa-apple" aria-hidden="tr
 
 - Required:
 ``` console
-$ brew install automake cmake boost gmp glpk hwloc
+$ brew install automake boost cln ginac glpk hwloc
 ```
 
 - Recommended:
 ``` console
-$ brew install automake cmake boost gmp glpk hwloc z3 xerces-c
+$ brew install automake boost cln ginac glpk hwloc z3 xerces-c
 ```
 
 #### Intel-based Systems
