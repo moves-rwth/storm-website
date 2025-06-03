@@ -9,10 +9,14 @@ task :test do
       'https://www.aachener-zeitung.de/wirtschaft/storm-findet-sicherheitskritische-softwarefehler/3962772.html',
       'https://cavconference.org/2017/accepted-papers', # SSL error
       'https://www.cse.msu.edu/~cse870/Materials/FaultTolerant/manual-galileo.htm#Editing%20in%20the%20Textual%20View', # Anchor not found
+      'https://doi.org/10.1145/2933575.2934574',
+      'https://doi.org/10.1609/AAAI.V37I12.26723',
+      'https://doi.org/10.1007/s00165-021-00547-2',
+      'https://doi.org/10.1609/AAAI.V35I13.17401',
       'http://fizzed.com/oss/font-mfizz', # HTTPS not supported
-      'https://getfem.org/gmm.html', # SSL error
       'https://qcomp.org/benchmarks/index.html#crowds', # Anchor not found
       'https://qcomp.org/benchmarks/index.html#jobs', # Anchor not found
+      'https://www.rwth-aachen.de/cms/root/Die-RWTH/Aktuell/Pressemitteilungen/Maerz-2021/~mzsyp/Ausgezeichnete-Ideen-fuer-eine-starke-Aa/?lidx=1',
     ],
   }).run
 end
