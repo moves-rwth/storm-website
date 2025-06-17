@@ -2,7 +2,7 @@
 title: Build from Source
 layout: default
 documentation: true
-category_weight: 1
+category_weight: 2
 categories: [Obtain Storm]
 ---
 
@@ -24,9 +24,9 @@ While compiling the source code is not always a breeze (depending on your operat
 
 Currently, we provide support for
 
-- <i class="fa fa-apple" aria-hidden="true"></i> macOS on either x86- or [ARM-based](apple-silicon.html) CPUs
+- <i class="fa fa-apple" aria-hidden="true"></i> macOS on either x86- or ARM-based CPUs
 - <i class="icon-debian"></i> Debian 12 and higher
-- <i class="icon-ubuntu"></i> Ubuntu 22.04 and higher
+- <i class="icon-ubuntu"></i> Ubuntu 24.04 and higher
 - <i class="icon-archlinux"></i> Arch Linux
 
 which are known to enable the easy installation of Storm. Other Linux distributions are likely to work too, but it may take significant effort to get the required versions of the dependencies up and running.
@@ -36,8 +36,6 @@ Building on Windows is currently not supported and we recommend to use either a 
 
 We are going to assume that all necessary [dependencies](dependencies.html) have been installed on the machine in default locations so they can be found by our build machinery.
  
-If you just want to run Storm and you want to run it natively on your machine, then we recommend installing it via a package manager or using the [Docker container](docker.html). However, if you want or need to make changes to the Storm code base, you have to obtain the source code and build it yourself. While this is not always a breeze (depending on your operating system), we spent some effort on making this process as easy as possible.
-
 ## Obtaining the Source Code
 
 The source code of the latest stable release can be downloaded from [GitHub](https://github.com/moves-rwth/storm/releases/latest){:target="_blank"}. You can either clone the git repository
@@ -104,11 +102,18 @@ If you just want to compile Storm's main command-line interface, typing `make st
 
 {:.alert .alert-info}
 If you have multiple cores at your disposal and at least 8GB of memory, you can execute
-`make storm-cli -j${NUMBER_OF_CORES}` to speed up compilation.
+`make -j${NUMBER_OF_CORES}` to speed up compilation.
+
+## Installing Storm <span class="label label-info">optional</span>
+After the build step was successful, you can install Storm in your system by
+
+```console
+$ make install
+```
 
 ## Adding Storm to your Path <span class="label label-info">optional</span>
 
-If you want to be able to run Storm from anywhere, you may want to add it to your path (in the tutorial on how to [run Storm]({{ '/documentation/usage/running-storm.html' | relative_url }}) this is assumed). You can do so, by
+If you want to be able to run Storm from anywhere you can either install Storm (see previous step) or you can add it to your path (in the tutorial on how to [run Storm]({{ '/documentation/usage/running-storm.html' | relative_url }}) this is assumed). You can do so, by
 
 ```console
 $ export PATH=$PATH:$STORM_DIR/build/bin

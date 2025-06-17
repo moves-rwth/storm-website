@@ -2,7 +2,7 @@
 title: Use Docker Container
 layout: default
 documentation: true
-category_weight: 3
+category_weight: 5
 categories: [Obtain Storm]
 ---
 
@@ -24,7 +24,7 @@ Next you should start the Docker app and its tray icon should be visible.
 If you are running Windows, you may need to reboot your machine for the Docker installation to be completed and available using the command line.
 
 ## Download Docker Image
-Then you have to download the Docker image you want to use. All available images can be found on [DockerHub](https://hub.docker.com/r/movesrwth/storm/tags/){:target="_blank"}. We offer images for the latest release (tag `stable`), all previous releases (tagged with the version number `x.y.z`), and a daily version of the most recent development version of Storm (tag `ci-release`). Furthermore, we also provide debug builds for each image (indicated by the suffix `-debug`).
+Then you have to download the Docker image you want to use. All available images can be found on [DockerHub](https://hub.docker.com/r/movesrwth/storm/tags/){:target="_blank"}. We offer images for the latest release (tag `stable`), all previous releases (tagged with the version number `x.y.z`), and a daily version of the most recent development version of Storm (tag `ci`). Furthermore, we also provide debug builds for each image (indicated by the suffix `-debug`).
 
 Download the Storm container you want to use:
 

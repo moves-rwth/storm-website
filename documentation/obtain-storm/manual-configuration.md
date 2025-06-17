@@ -1,28 +1,44 @@
 ---
 title: Manual Configuration
 layout: default
+documentation: true
+category_weight: 3
+categories: [Obtain Storm]
 ---
 
 <h1>Manual Configuration</h1>
 
 {% include includes/toc.html %}
 
+This guide is designed for users that need particular features and people developing under Storm.
+We will detail how to perform a manual configuration of the build process.
 
-Designed for users that need particular features and people developing under Storm, this guide will detail how to perform a manual configuration of the build process.
-
-There are a number of **cmake options** that modify how Storm is built.
-All of them can be set in the [configuration step](build.html#configuration-step) by providing them to `cmake`.
+There are a number of CMake options that modify how Storm is built.
+All of them can be set in the [configuration step]({{ '/documentation/obtain-storm/build.html#configuration-step' | relative_url }}) by providing them to `cmake`.
 To modify the options after the configuration step, you may run `ccmake ..` (assuming that you currently are in `STORM_DIR/build`). After changing these options you need to rebuild Storm using `make`.
 
 We don't detail all options here, but only selected ones.
+For a full list of options, we refer to `ccmake ..` and all options with prefix `STORM_X`.
+
+## Build configurations
+
+By default, Storm is compiled in release mode which enables various compiler optimization.
+For debugging purposes, Storm can also be compiled in debug mode by providing the CMake argument `-DCMAKE_BUILD_TYPE=DEBUG`.
+
+The flag `-DSTORM_BUILD_EXECUTABLES` enables/disables the building of the executables, the flag `-DSTORM_BUILD_TESTS` enables/disables the building of the tests.
 
 ## Developer
 
 For developers, we offer the option `-DSTORM_DEVELOPER=ON`. This enables
 
-- more cmake output
+- more CMake output
 - more warnings
-- debug and trace log levels (they are not always printed and may need to be enabled; in the Storm main binary, this can be done by providing `--debug` or `--trace`)
+- debug and trace log levels (they are not always printed and need to be explicitly enabled through the CLI arguments `--debug` or `--trace`)
+
+## Libraries
+
+Additional libraries can be configured during the configuration step.
+We refer to the [documentation on dependencies]({{ '/documentation/obtain-storm/dependencies.html#list-of-dependencies' | relative_url }}) for detailed instructions.
 
 ## Link-time optimization
 
@@ -30,17 +46,5 @@ By default, Storm uses link-time optimization (LTO) to enable even more optimiza
 
 ## Portability
 
-By default, the binaries will be built specifically for your machine, because this enables a wider range of optimizations to be enabled. If you need your binaries to be portable (in the sense that they could run on another machine that has all required dependencies in their right version), you can set `-DSTORM_PORTABLE=ON` at the cost of producing slower binaries.
+By default, the binaries will be built specifically for your machine, because this enables a wider range of optimizations to be enabled. If you need your binaries to be portable (in the sense that they could run on another machine that has all required dependencies in their right version or in a Docker container), you can set `-DSTORM_PORTABLE=ON` at the cost of producing slower binaries.
 
-
-## Intel Threading Building Blocks (TBB)
-
-[Intel's Threading Building Blocks](https://www.threadingbuildingblocks.org/){:target="_blank"} is a framework for parallelism. If available, Storm can use it to parallelize some operations like (some but not all) matrix-vector multiplications. If TBB is installed, you can enable it by setting the cmake option `-DSTORM_USE_INTELTBB=ON` and adding the command line argument `--enable-tbb` to Storm.
-
-## Gurobi
-
-[Gurobi](https://www.gurobi.com/){:target="_blank"} is a commercial high-performance solver for (mixed-integer) linear programs (and similar problems). A free license can be obtained for academic purposes. Storm provides an implementation of its (MI)LP solver interface that uses Gurobi (provided Storm has been compiled with support for it). To enable Gurobi, specify the option `-DSTORM_USE_GUROBI=ON` and set a hint at where to find Gurobi via `-DGUROBI_ROOT=/path/to/gurobi`.
-
-## MathSAT
-
-[MathSAT](https://mathsat.fbk.eu/){:target="_blank"} is a high-performance SMT solver that can be used as an alternative to [Z3](https://github.com/Z3Prover/z3){:target="_blank"}. In contrast to Z3, it provides native support for AllSat (enumeration of all satisfying models of a formula) and may generate Craig interpolants. This makes MathSAT particularly useful in the [abstraction-refinement engine]({{ '/documentation/background/engines.html#abstraction-refinement' | relative_url }}). To enable MathSAT, you need to set `-DMSAT_ROOT=/path/to/mathsat/root` where MathSAT's root directory is required to contain the `include` and `lib` folders with the appropriate files (if you download and unpack it, its the directory into which you unpacked it).
