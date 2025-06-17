@@ -86,7 +86,7 @@ Storm
 - went open source in 2017
 - has over 15 [contributors](https://github.com/moves-rwth/storm/graphs/contributors)
 - supported on most Unix platforms
-- would have been impossible without all the [cool libraries around]({{ '/documentation/dependencies.html' | relative_url }})
+- would have been impossible without all the [cool libraries around]({{ '/documentation/obtain-storm/dependencies.html#list-of-dependencies' | relative_url }})
 
 ## People
 

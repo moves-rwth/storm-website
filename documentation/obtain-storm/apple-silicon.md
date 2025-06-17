@@ -12,11 +12,10 @@ However, there are a few points to consider for troubleshooting.
 
 * Make sure you have the latest version of Storm (Version 1.8.0 or later)
 * Make sure that you use an ARM compiled `cmake` binary (check with `where cmake` and `file path/to/cmake`)
-* Dependencies need to be installed using the *ARM* version of homebrew. Skip `cln` and `ginac` since (at the time of writing) they do not have an ARM version supported by homebrew
-* Carl also needs to be build without `cln` and `ginac`.
+* Dependencies need to be installed using the *ARM* version of homebrew.
 * If you previously had an x86 version installed, you need to re-build Storm (and carl, if installed manually) from scratch. For this, remove the corresponding `build` folders and invoke the building steps again.
 * Examine the `cmake` output. It might have found an `x86` version of carl or another dependency. Homebrew dependencies should normally be found in `/opt/homebrew`, *not* in `/usr/local/`.
-* Contact us at [support@stormchecker.org](mailto:support@stormchecker.org) or on [GitHub](https://github.com/moves-rwth/storm) in case of issues.
+* Contact us and [file an issue]({{ '/documentation/obtain-storm/troubleshooting.html#file-an-issue' | relative_url }}) in case of issues.
 
 
 ##  Compiling with x86 Emulation

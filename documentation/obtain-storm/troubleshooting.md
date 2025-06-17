@@ -2,7 +2,7 @@
 title: Troubleshooting
 layout: default
 documentation: true
-category_weight: 5
+category_weight: 7
 categories: [Obtain Storm]
 ---
 

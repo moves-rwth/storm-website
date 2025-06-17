@@ -1,6 +1,9 @@
 ---
 title: Installing Dependencies
 layout: default
+documentation: true
+category_weight: 1
+categories: [Obtain Storm]
 ---
 
 <h1>Installing Dependencies</h1>
@@ -98,6 +101,7 @@ A library can be explicitly disabled by providing the CMake argument `-DSTORM_DI
 [CArL](https://github.com/moves-rwth/carl-storm) is a computer arithmetic and logic library.
 It is heavily intertwined with Storm and provides the support for symbolic computations and a wrapper for exact arithmetic.
 Carl is automatically downloaded and installed during the Storm build process.
+You can configure the repository and git tag where carl is obtained by the CMake arguments `-DSTORM_CARL_GIT_REPO` and `-DSTORM_CARL_GIT_TAG`.
 To use an existing local copy of the carl repository, you can provide the location via `-DFETCHCONTENT_SOURCE_DIR_CARL=/path/to/carl/repo` during CMake configuration.
 Note that Storm only uses the sources from this directory, but still builds the carl library.
 The use of Carl cannot be disabled.
