@@ -14,6 +14,7 @@ task :test do
       'https://doi.org/10.1007/s00165-021-00547-2',
       'https://doi.org/10.1609/AAAI.V35I13.17401',
       'http://fizzed.com/oss/font-mfizz', # HTTPS not supported
+      'https://github.com/neovim/neovim/issues/9050#issuecomment-424417456', # Anchor not found
       'https://qcomp.org/benchmarks/index.html#crowds', # Anchor not found
       'https://qcomp.org/benchmarks/index.html#jobs', # Anchor not found
       'https://www.rwth-aachen.de/cms/root/Die-RWTH/Aktuell/Pressemitteilungen/Maerz-2021/~mzsyp/Ausgezeichnete-Ideen-fuer-eine-starke-Aa/?lidx=1',
