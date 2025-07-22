@@ -11,9 +11,9 @@ categories: [Obtain Storm]
 {% include includes/toc.html %}
 
 {:.alert .alert-danger}
-To reduce the virtualization overhead, it should be considered to use a [Docker container](docker.html){:.alert-link} instead of a VM.
+The virtual machine images are outdated. We strongly suggest to use a [Docker container](docker.html){:.alert-link} instead.
 
-On this page we provide virtual machine images containing pre-installed versions of Storm.
+On this page we provide (old) virtual machine images containing pre-installed versions of Storm.
 
 When you have downloaded an OVA image, you can import it into, for example, [VirtualBox](https://www.virtualbox.org){:target="_blank"}. Before the first run, you should review the hardware resources allocated to the VM. E.g., for VirtualBox open *Settings → System* and adjust the memory size and CPU count under *Motherboard* and *Processor*, respectively.
 
