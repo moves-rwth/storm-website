@@ -1,7 +1,7 @@
 ---
 title: Use Virtual Machine
 layout: default
-documentation: true
+documentation: false
 category_weight: 6
 categories: [Obtain Storm]
 ---
