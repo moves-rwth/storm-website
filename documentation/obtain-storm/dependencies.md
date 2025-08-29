@@ -80,12 +80,12 @@ We currently support Debian from version 12 and Ubuntu from version 24.04.
 
 - Required:
 ``` console
-$ sudo apt-get install automake build-essential cmake git libboost-all-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev
+$ sudo apt-get install automake build-essential cmake git libboost-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev
 ```
 
 - Recommended
 ``` console
-$ sudo apt-get install automake build-essential cmake git libboost-all-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev libeigen3-dev libxerces-c-dev libz3-dev
+$ sudo apt-get install automake build-essential cmake git libboost-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev libeigen3-dev libxerces-c-dev libz3-dev
 ```
 
 
