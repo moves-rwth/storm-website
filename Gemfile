@@ -8,5 +8,5 @@ end
 
 group :test do
   gem "rake"
-  gem "html-proofer", "~> 5.1.0"
+  gem "html-proofer", "~> 5.2.0"
 end
