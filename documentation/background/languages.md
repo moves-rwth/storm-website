@@ -83,3 +83,9 @@ one two goal
 ```
 
 This creates three distinct labels, called ```one```, ```two``` and ```goal```. State 0 is labeled with both ```one``` and ```two```, while state 1 only carries the ```goal``` label.
+
+## DRN format
+
+The *DiRect eNcoding format (DRN)* is a Storm-specific explicit format.
+It is inspired by the [explicit](#explicit) format and extends it to all supported model types.
+The DRN format is described on a [separate page]({{ '/documentation/background/drn.html' | relative_url }}).
