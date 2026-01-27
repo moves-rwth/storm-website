@@ -36,8 +36,7 @@ The [GreatSPN editor](https://github.com/greatspn/SOURCES){:target="_blank"} is 
 
 ## DFTs
 
-Dynamic Fault Trees are given in the so-called [Galileo Format](https://www.cse.msu.edu/~cse870/Materials/FaultTolerant/manual-galileo.htm#Editing%20in%20the%20Textual%20View){:target="_blank"}.
-The format is a simple textual format naming the root of the tree and then lists all nodes of the tree, together with the children of each node. A [rich collection](https://github.com/moves-rwth/dft-examples){:target="_blank"} of examples is available.
+The input formats for dynamic fault trees (DFT) are specified on a [separate page]({{ '/documentation/background/dft.html' | relative_url }}).
 
 ## Explicit
 
