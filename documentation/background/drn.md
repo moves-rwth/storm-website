@@ -11,7 +11,7 @@ categories: [languages]
 {% include includes/toc.html %}
 
 
-The *DiRect eNcoding format (DRN)* is a Storm-specific explicit and human-readable format for Markov modelss.
+The *DiRect eNcoding format (DRN)* is a Storm-specific explicit and human-readable format for Markov models.
 It is inspired by existing [explicit formats]({{ '/documentation/background/languages.html#explicit' | relative_url }}), but trades modularity for simplicity by putting the model into a single file. 
 DRN supports all model types supported by Storm, including interval and parametric instances of these models.
 
@@ -22,8 +22,6 @@ A DRN file can then be exported via the flag `-drn <output_file.drn>` or the mor
 ## The DRN Format
 In the following, we describe the file structure.
 
-
-## File structure
 In DRN files, anything after `//` is a **comment**, and will be ignored. Comments should be on their own line.
 
 ### Header sections
