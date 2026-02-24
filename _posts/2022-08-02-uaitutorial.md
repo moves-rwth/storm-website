@@ -9,5 +9,5 @@ Storm has recently been featured in a tutorial on probabilistic verification at 
 <!--more-->
 
 The tutorial slides can be found [online](https://sjunges.github.io/files/UAI-tutorial.pdf).
-Material for the hands-on session is available on [github](https://github.com/moves-rwth/stormpyter/tree/master/tutorial_uai).
+Material for the hands-on session is available on [github](https://github.com/stormchecker/stormpyter/tree/master/tutorial_uai).
 
