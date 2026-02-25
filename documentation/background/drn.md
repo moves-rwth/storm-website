@@ -32,7 +32,7 @@ Each section starts with an `@` and an identifier describing what kind of sectio
 
 Section `@type: <model_type>` indicates the **model type**: DTMC, MDP, CTMC, Markov Automaton, POMDP.
 
-Section `@value_type <value_type>` indicates the **type of numeric values** (i.e. probabilities, rewards, exit rates): double, double-interval, rational, rational-interval, parametric
+Section `@value_type <value_type>` indicates the **type of numeric values** (i.e. probabilities, rewards, exit rates) and can be one of `double`, `double-interval`, `rational`, `rational-interval`, `parametric`.
 
 Section `@nr_states` provides the total **number of states** in the next line.
 Similarly, section `@nr_choices` provides the total **number of choices** (also called actions) of the model in the next line.
