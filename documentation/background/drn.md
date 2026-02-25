@@ -30,7 +30,7 @@ In DRN files, anything after `//` is a **comment**, and will be ignored. Comment
 Generally, files are a list of **sections**, where the first sections provide general information on the model.
 Each section starts with an `@` and an identifier describing what kind of section it is. Each section occurs only once.
 
-Section `@type: <model_type>` indicates the **model type**: DTMC, MDP, CTMC, Markov Automaton, POMDP.
+Section `@type: <model_type>` indicates the **model type** and can be one of `DTMC`, `MDP`, `CTMC`, `Markov Automaton`, `POMDP`.
 
 Section `@value_type <value_type>` indicates the **type of numeric values** (i.e. probabilities, rewards, exit rates) and can be one of `double`, `double-interval`, `rational`, `rational-interval`, `parametric`.
 
