@@ -16,7 +16,7 @@ It is inspired by existing [explicit formats]({{ '/documentation/background/lang
 DRN supports all model types supported by Storm, including interval and parametric instances of these models.
 
 Use the option `-drn <input_file.drn>` to load a model given as DRN file.
-A DRN file for a loaded model can be exported using the command `--exportbuild <output_file.drn>`.
+A DRN file for any loaded model can be exported using the command `--exportbuild <output_file.drn>`.
 
 Storm can also directly read from and write to `gzip` or `xz` compressed DRN files. Upon import, compression is detected automatically.
 Upon export, compression is by default used when the file extension is either `.drn.gz` or `.drn.xz`.
