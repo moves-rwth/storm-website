@@ -32,8 +32,8 @@ The tutorial was originally presented at [DisCoTec 2020](https://www.discotec.or
 </div>
 
 You can try out all examples from the tutorial by yourself and even play around with modifications.
-Use the links to follow along [part 2 about Storm](https://mybinder.org/v2/gh/moves-rwth/stormpyter/discotec2020?filepath=tutorial_discotec2020%2Fdiscotec_storm.ipynb){:target="_blank"} or [part 3 about stormpy](https://mybinder.org/v2/gh/moves-rwth/stormpyter/discotec2020?filepath=tutorial_discotec2020%2Fdiscotec_stormpy.ipynb){:target="_blank"}, the Python bindings of Storm.
-For more details, also see the corresponding [webpage](https://github.com/moves-rwth/stormpyter/tree/master/tutorial_discotec2020) for the tutorial.
+Use the links to follow along [part 2 about Storm](https://mybinder.org/v2/gh/stormchecker/stormpyter/discotec2020?filepath=tutorial_discotec2020%2Fdiscotec_storm.ipynb){:target="_blank"} or [part 3 about stormpy](https://mybinder.org/v2/gh/stormchecker/stormpyter/discotec2020?filepath=tutorial_discotec2020%2Fdiscotec_stormpy.ipynb){:target="_blank"}, the Python bindings of Storm.
+For more details, also see the corresponding [webpage](https://github.com/stormchecker/stormpyter/tree/master/tutorial_discotec2020) for the tutorial.
 
 ## Characteristics
 
