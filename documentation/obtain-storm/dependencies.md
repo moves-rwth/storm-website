@@ -40,7 +40,7 @@ Recommended:
 - glpk (use z3 instead if glpk is not present)
 - z3 (not strictly required, but already needed for standard tasks like PRISM/JANI model building)
 - xerces (needed for the parsing and export of XML files, in particular for GSPNs)
-
+- libarchive (needed to read and write UMB models as well as compressed DRN files)
 
 ## OS specific preparations
 
@@ -69,7 +69,7 @@ $ brew install automake cmake boost ginac glpk gmp hwloc
 
 - Recommended:
 ``` console
-$ brew install automake cmake boost ginac glpk gmp hwloc xerces-c z3
+$ brew install automake cmake boost ginac glpk gmp hwloc libarchive xerces-c z3
 ```
 
 
@@ -85,7 +85,7 @@ $ sudo apt-get install automake build-essential cmake git libboost-dev libginac-
 
 - Recommended
 ``` console
-$ sudo apt-get install automake build-essential cmake git libboost-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev libeigen3-dev libxerces-c-dev libz3-dev
+$ sudo apt-get install automake build-essential cmake git libboost-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev libeigen3-dev libarchive-dev libxerces-c-dev libz3-dev
 ```
 
 
@@ -158,6 +158,7 @@ Storms uses the following additional libraries for some of its functionality.
 - [ExprTk](https://www.partow.net/programming/exprtk/index.html){:target="_blank"}: parsing of mathematical expressions
 - [GTest](https://github.com/google/googletest){:target="_blank"}: testing infrastructure
 - [L3pp](https://github.com/hbruintjes/l3pp){:target="_blank"}: logging
+- [LibArchive](https://www.libarchive.org){:target="_blank"} reading and writing archives
 - [ModernJSON](https://json.nlohmann.me/){:target="_blank"}: parser for JSON
 - [Parallel Hashmap](https://github.com/greg7mdp/parallel-hashmap){:target="_blank"}: hashmap
 - [PRISM](https://www.prismmodelchecker.org){:target="_blank"}: source of some CUDD extensions for MTBDD based model checking
