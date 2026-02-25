@@ -29,18 +29,18 @@ In the following, we provide an overview over the *required* and *recommended* d
 
 Required:
 - automake
-- cmake
-- git
 - boost
+- cmake
 - ginac
+- git
 - gmp
 - hwloc
 
 Recommended:
 - glpk (use z3 instead if glpk is not present)
-- z3 (not strictly required, but already needed for standard tasks like PRISM/JANI model building)
-- xerces (needed for the parsing and export of XML files, in particular for GSPNs)
 - libarchive (needed to read and write UMB models as well as compressed DRN files)
+- xerces (needed for the parsing and export of XML files, in particular for GSPNs)
+- z3 (not strictly required, but already needed for standard tasks like PRISM/JANI model building)
 
 ## OS specific preparations
 
