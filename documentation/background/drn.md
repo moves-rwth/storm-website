@@ -15,9 +15,11 @@ The *DiRect eNcoding format (DRN)* is a Storm-specific explicit and human-readab
 It is inspired by existing [explicit formats]({{ '/documentation/background/languages.html#explicit' | relative_url }}), but trades modularity for simplicity by putting the model into a single file. 
 DRN supports all model types supported by Storm, including interval and parametric instances of these models.
 
-DRN files can be automatically generated for models loaded into Storm via another input language.
-A DRN file can then be exported via the flag `-drn <output_file.drn>` or the more general command `--exportbuild <output_file.drn>`.
+Use the option `-drn <input_file.drn>` to load a model given as DRN file.
+A DRN file for a loaded model can be exported using the command `--exportbuild <output_file.drn>`.
 
+Storm can also directly read from and write to `gzip` or `xz` compressed DRN files. Upon import, compression is detected automatically.
+Upon export, compression is by default used when the file extension is either `.drn.gz` or `.drn.xz`.
 
 ## The DRN Format
 In the following, we describe the file structure.
@@ -30,9 +32,11 @@ Each section starts with an `@` and an identifier describing what kind of sectio
 
 Section `@type: <model_type>` indicates the **model type**: DTMC, MDP, CTMC, Markov Automaton, POMDP.
 
+Section `@value_type <value_type>` indicates the **type of numeric values** (i.e. probabilities, rewards, exit rates): double, double-interval, rational, rational-interval, parametric
+
 Section `@nr_states` provides the total **number of states** in the next line.
 Similarly, section `@nr_choices` provides the total **number of choices** (also called actions) of the model in the next line.
-For deterministic models, the number of states and the number of actions coincide.
+For deterministic models, the number of states and the number of choices coincide.
 
 ### Optional sections
 The following are **optional** sections and can be omitted if not relevant.
@@ -85,6 +89,7 @@ An extract of an example DRN file is provided below:
 // Exported by storm
 // Original model type: MDP
 @type: MDP
+@value_type: double
 @parameters
 
 @reward_models
