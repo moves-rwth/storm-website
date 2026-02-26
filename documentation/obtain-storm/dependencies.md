@@ -85,7 +85,7 @@ $ sudo apt-get install automake build-essential cmake git libboost-dev libginac-
 
 - Recommended
 ``` console
-$ sudo apt-get install automake build-essential cmake git libboost-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev libeigen3-dev libarchive-dev libxerces-c-dev libz3-dev
+$ sudo apt-get install automake build-essential cmake git libboost-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev libarchive-dev libxerces-c-dev libz3-dev
 ```
 
 
