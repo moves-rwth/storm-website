@@ -42,13 +42,13 @@ $ cd ~/Desktop/data
 The next command starts the previously downloaded image and enables file sharing with the current directory:
 
 ```console
-$ docker run --mount type=bind,source="$(pwd)",target=/data -w /opt/storm/build/bin --rm -it --name storm movesrwth/storm:stable
+$ docker run --mount type=bind,source="$(pwd)",target=/data -w /data --rm -it --name storm movesrwth/storm:stable
 ```
 
 After executing the command you are now within the Docker container indicated by a different prompt:
 
 ```console
-root@1234xyz:/opt/storm/build/bin#
+root@1234xyz:/data#
 ```
 
 The file sharing directory is located at `/data` for the example directories above.
@@ -80,13 +80,13 @@ In the _Shared Drives_ option tick the drive letters you want to make Storm avai
 The next command starts the previously downloaded image and enables file sharing with the earlier set directory:
 
 ```console
-> docker run --mount type=bind,source=%hostdir%,target=%sharedir% -w /opt/storm/build/bin --rm -it --name storm movesrwth/storm:stable
+> docker run --mount type=bind,source=%hostdir%,target=%sharedir% -w %sharedir% --rm -it --name storm movesrwth/storm:stable
 ```
 
 After executing the command you are now within the Docker container indicated by a different prompt:
 
 ```console
-root@1234xyz:/opt/storm/build/bin#
+root@1234xyz:/data#
 ```
 
 The file sharing directory is located at `/data` for the example directories above.
@@ -96,16 +96,8 @@ You can now continue with [testing the container](#testing-the-container).
 After running the Docker Image according to the commands above, you can start using Storm within this container:
 
 ```console
-$ ./storm --version
+$ storm --version
 ```
-
-To try out file sharing execute:
-
-```console
-$ ./storm --prism ../../resources/examples/testfiles/dtmc/die.pm --io:exportexplicit /data/die.drn
-```
-
-Afterwards there should be a file named `die.drn` in the shared directory now.
 
 In the end exit the container with:
 
