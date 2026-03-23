@@ -31,7 +31,7 @@ The benchmarks were run on 4 cores of an Intel Xeon Platinum 8160 Processor with
 All benchmarks from [QComp 2019](https://qcomp.org/competition/2019/index.html) were considered, except for 4 PTA Benchmarks that were not compatible with Storm.
 
 #### Results
-<a target="_blank" href="https://moves-rwth.github.io/storm-benchmark-logs/docs/2020-09/table.html" class="btn btn-primary btn-md active" role="button">Show interactive result table</a>
+<a target="_blank" href="https://stormchecker.github.io/storm-benchmark-logs/docs/2020-09/table.html" class="btn btn-primary btn-md active" role="button">Show interactive result table</a>
 <a target="_blank" href="https://doi.org/10.5281/zenodo.4017717" class="btn btn-primary btn-md active" role="button">Download raw data and replication package</a>
 
 
@@ -58,8 +58,8 @@ In order to share the results, we provide them as a set of log files. To make th
 The log files were obtained using a version of Storm that represents "infinity" as "-1" in `--exact` mode. This is,
 however just a displaying issue. Newer versions of Storm correctly display "inf" as the result.
 
-<a target="_blank" href="https://moves-rwth.github.io/storm-benchmark-logs/docs/index_dtmc.html" class="btn btn-primary btn-md active" role="button">Show DTMC table</a>
-<a target="_blank" href="https://moves-rwth.github.io/storm-benchmark-logs/docs/index_ctmc.html" class="btn btn-primary btn-md active" role="button">Show CTMC table</a>
-<a target="_blank" href="https://moves-rwth.github.io/storm-benchmark-logs/docs/index_mdp.html" class="btn btn-primary btn-md active" role="button">Show MDP table</a>
-<a target="_blank" href="https://moves-rwth.github.io/storm-benchmark-logs/docs/index_ma.html" class="btn btn-primary btn-md active" role="button">Show MA table</a>
-<a target="_blank" href="https://www.github.com/moves-rwth/storm-benchmark-logs/" class="btn btn-primary btn-md active" role="button">Show log files</a>
+<a target="_blank" href="https://stormchecker.github.io/storm-benchmark-logs/docs/index_dtmc.html" class="btn btn-primary btn-md active" role="button">Show DTMC table</a>
+<a target="_blank" href="https://stormchecker.github.io/storm-benchmark-logs/docs/index_ctmc.html" class="btn btn-primary btn-md active" role="button">Show CTMC table</a>
+<a target="_blank" href="https://stormchecker.github.io/storm-benchmark-logs/docs/index_mdp.html" class="btn btn-primary btn-md active" role="button">Show MDP table</a>
+<a target="_blank" href="https://stormchecker.github.io/storm-benchmark-logs/docs/index_ma.html" class="btn btn-primary btn-md active" role="button">Show MA table</a>
+<a target="_blank" href="https://www.github.com/stormchecker/storm-benchmark-logs/" class="btn btn-primary btn-md active" role="button">Show log files</a>
