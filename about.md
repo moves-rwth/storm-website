@@ -69,7 +69,7 @@ Storm tries to mitigate this problem by offering support for several major input
 
 ### <i class="icon-python"></i> Easy Interface
 
-While Storm tries to make it easy to include new functionality, a developer still has to somewhat understand its architecture to make appropriate additions or changes. However, suppose a user just wants to combine functionality that is already there to create new algorithms. Optimally, he/she could abstract from some of C++'s intricacies and focus on the actual algorithm. This process is supported by [Stormpy](https://moves-rwth.github.io/stormpy/){:target="_blank"}, which provides a python API for an ever growing part of Storm's code base. These bindings not only allow to utilize the high-performance routines of Storm in combination with the ease of python, but also make it possible to intertwine calls to Storm with calls to other useful libraries available in python, for example (but not limited to):
+While Storm tries to make it easy to include new functionality, a developer still has to somewhat understand its architecture to make appropriate additions or changes. However, suppose a user just wants to combine functionality that is already there to create new algorithms. Optimally, he/she could abstract from some of C++'s intricacies and focus on the actual algorithm. This process is supported by [Stormpy](https://stormchecker.github.io/stormpy/){:target="_blank"}, which provides a python API for an ever growing part of Storm's code base. These bindings not only allow to utilize the high-performance routines of Storm in combination with the ease of python, but also make it possible to intertwine calls to Storm with calls to other useful libraries available in python, for example (but not limited to):
 
 - simple IO,
 - plotting (e.g. [matplotlib](https://matplotlib.org/){:target="_blank"}),
@@ -84,7 +84,7 @@ Storm
 - has roughly ~220k lines of C++ code (as of April 2023)
 - is under development since 2012
 - went open source in 2017
-- has over 15 [contributors](https://github.com/moves-rwth/storm/graphs/contributors)
+- has over 15 [contributors](https://github.com/stormchecker/storm/graphs/contributors)
 - supported on most Unix platforms
 - would have been impossible without all the [cool libraries around]({{ '/documentation/obtain-storm/dependencies.html#list-of-dependencies' | relative_url }})
 
@@ -95,7 +95,7 @@ The developers can be reached via
 
 If you have general feedback or questions on how to use Storm, please send us a mail.
 
-For feature request or bug reports, please open a [new issue on GitHub](https://github.com/moves-rwth/storm/issues/new){:target="_blank"}.
+For feature request or bug reports, please open a [new issue on GitHub](https://github.com/stormchecker/storm/issues/new){:target="_blank"}.
 
 Storm has initially been developed at the [Chair for Software Modeling and Verification](https://moves.rwth-aachen.de){:target="_blank"} at RWTH Aachen University.
 The core developers are
@@ -106,7 +106,7 @@ The core developers are
 - [Tim Quatman](https://moves.rwth-aachen.de/people/quatmann/){:target="_blank"} RWTH Aachen University
 - [Matthias Volk](https://volkm.github.io){:target="_blank"} Eindhoven University of Technology
 
-For an exhaustive list of contributors and more details, see the [Github page](https://github.com/moves-rwth/storm/graphs/contributors).
+For an exhaustive list of contributors and more details, see the [Github page](https://github.com/stormchecker/storm/graphs/contributors).
 
 ## Website
 

@@ -9,7 +9,7 @@ categories: [Obtain Storm]
 # Install Storm via Homebrew
 
 {:.alert .alert-danger}
-This installation method is currently not compatible with [Stormpy](https://moves-rwth.github.io/stormpy/){:target="_blank" .alert-link}—the python bindings of Storm.
+This installation method is currently not compatible with [Stormpy](https://stormchecker.github.io/stormpy/){:target="_blank" .alert-link}—the python bindings of Storm.
 If you plan to use Stormpy, you should [build Storm from source](build.html){:.alert-link}.
 
 On macOS, you can use [homebrew](https://brew.sh/){:target="_blank"}, the "missing package manager for macOS" to install Storm.

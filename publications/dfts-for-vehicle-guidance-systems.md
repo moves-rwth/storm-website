@@ -20,7 +20,7 @@ Further information on the DFT GUI can be found in the [documentation](https://g
 
 ### Analysis
 
-The fault tree analysis is performed by [Storm](https://github.com/moves-rwth/storm/){:target="_blank"}.
+The fault tree analysis is performed by [Storm](https://github.com/stormchecker/storm/){:target="_blank"}.
 
 The computation of the failure probability within for example time `10,000` can be performed with the following call:
 ```console

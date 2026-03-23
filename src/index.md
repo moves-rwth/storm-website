@@ -1,4 +1,4 @@
 ---
 layout: redirect
-link: https://github.com/moves-rwth/storm/
+link: https://github.com/stormchecker/storm/
 ---
