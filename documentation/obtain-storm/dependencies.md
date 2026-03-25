@@ -34,7 +34,6 @@ Required:
 - ginac
 - git
 - gmp
-- hwloc
 
 Recommended:
 - glpk (use z3 instead if glpk is not present)
@@ -64,12 +63,12 @@ For troubleshooting building on ARM-based <i class="fa fa-apple" aria-hidden="tr
 
 - Required:
 ``` console
-$ brew install automake cmake boost ginac glpk gmp hwloc
+$ brew install automake cmake boost cln ginac gmp
 ```
 
 - Recommended:
 ``` console
-$ brew install automake cmake boost ginac glpk gmp hwloc libarchive xerces-c z3
+$ brew install automake cmake boost cln ginac glpk gmp libarchive xerces-c z3
 ```
 
 
@@ -80,12 +79,12 @@ We currently support Debian from version 12 and Ubuntu from version 24.04.
 
 - Required:
 ``` console
-$ sudo apt-get install automake build-essential cmake git libboost-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev
+$ sudo apt-get install automake build-essential cmake git libboost-dev libcln-dev libginac-dev libgmp-dev
 ```
 
 - Recommended
 ``` console
-$ sudo apt-get install automake build-essential cmake git libboost-dev libginac-dev libglpk-dev libgmp-dev libhwloc-dev libarchive-dev libxerces-c-dev libz3-dev
+$ sudo apt-get install automake build-essential cmake git libarchive-dev libboost-dev libcln-dev libginac-dev libglpk-dev libgmp-dev libxerces-c-dev libz3-dev
 ```
 
 
