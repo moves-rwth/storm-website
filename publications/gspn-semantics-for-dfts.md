@@ -10,7 +10,7 @@ On this page, you can find supplementary material for the GSPN semantics for DFT
 ## One Net Fits All
 ### A unifying semantics of Dynamic Fault Trees using GSPNs
 
-The translation from DFTs to GSPN is implemented in Storm in version [1.2.1](https://github.com/moves-rwth/storm/releases/tag/1.2.1).
+The translation from DFTs to GSPN is implemented in Storm in version [1.2.1](https://github.com/stormchecker/storm/releases/tag/1.2.1).
 
 The obtained GSPNs can be exported into the project format used by the [GreatSPN Editor](https://github.com/greatspn/SOURCES).
 

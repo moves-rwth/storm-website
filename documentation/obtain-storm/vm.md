@@ -36,7 +36,7 @@ sudo apt-get install build-essential git cmake libboost-dev libcln-dev libgmp-de
 
 * We are now ready to download and compile the source code by executing:
 ``` console
-git clone https://github.com/moves-rwth/storm.git
+git clone https://github.com/stormchecker/storm.git
 cd storm
 git checkout stable
 mkdir build

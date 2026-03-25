@@ -97,7 +97,7 @@ If a system library was not found, you can provide the location of specific libr
 A library can be explicitly disabled by providing the CMake argument `-DSTORM_DISABLE_X`.
 
 ### Carl
-[CArL](https://github.com/moves-rwth/carl-storm) is a computer arithmetic and logic library.
+[CArL](https://github.com/stormchecker/carl-storm) is a computer arithmetic and logic library.
 It is heavily intertwined with Storm and provides the support for symbolic computations and a wrapper for exact arithmetic.
 Carl is automatically downloaded and installed during the Storm build process.
 You can configure the repository and git tag where carl is obtained by the CMake arguments `-DSTORM_CARL_GIT_REPO` and `-DSTORM_CARL_GIT_TAG`.

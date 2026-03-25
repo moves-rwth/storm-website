@@ -1,4 +1,4 @@
 ---
 layout: redirect
-link: https://moves-rwth.github.io/stormpy/
+link: https://stormchecker.github.io/stormpy/
 ---

@@ -55,7 +55,7 @@ As a result, Storm might encounter numerical imprecisions due to using floating-
 If you encounter problems when using Storm, feel free to [contact us]({{ '/about.html#people' | relative_url }}) by writing a mail to
 - <i class="fa fa-envelope" aria-hidden="true"></i> support ```at``` stormchecker.org.
 
-You may also open an [issue on GitHub](https://github.com/moves-rwth/storm/issues){:target="_blank"}.
+You may also open an [issue on GitHub](https://github.com/stormchecker/storm/issues){:target="_blank"}.
 In any case, please provide as much information on your problem as you possibly can.
 For example, provide the input model you want to check and the complete command-line arguments you used for running Storm.
 It also helps us to know the exact version of Storm you are using.
