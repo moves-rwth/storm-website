@@ -4,6 +4,11 @@ navigation_weight: 4
 layout: default
 ---
 
+## Storm tutorial at FM 2026
+
+Storm is featured in a tutorial at [FM 2026](https://conf.researchr.org/home/fm-2026).
+The tutorial notebooks can be found [online](https://github.com/stormchecker/stormpyter/tree/master/tutorial_orchard).
+
 
 ## Storm tutorial at UAI 2022
 
