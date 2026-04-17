@@ -87,6 +87,7 @@ Storm
 - has over 15 [contributors](https://github.com/stormchecker/storm/graphs/contributors)
 - supported on most Unix platforms
 - would have been impossible without all the [cool libraries around]({{ '/documentation/obtain-storm/dependencies.html#list-of-dependencies' | relative_url }})
+- the logo of Storm in different variants is available [here]({{ '/resources/logo' | relative_url }})
 
 ## People
 
